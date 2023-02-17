@@ -69,6 +69,15 @@ h1, h2, h3, h4, h5, h6{
     color: var(--color-vino-real);
     font-size: 3rem;
 }
+.subtitulo{
+    font-family: var(--font-nautica);
+    font-size: 2rem;
+    color: var(--color-black);
+}
+.tit_primero_red{
+    font-family: var(--font-aviano-light);
+    font-size: 2rem;
+}
 p{
     margin-bottom: 0px;
 }
@@ -154,6 +163,43 @@ body{
     margin-right: 4px;
     width: 16px;
 }
+
+    /* COLOR WHITE */
+.color_white .list_mail svg path, .color_white .list_telefono svg path{
+    fill: var(--color-gris);
+}   
+.color_white .item_contact{
+    color: var(--color-gris);
+}
+.color_white .navbar-nav a{
+    color: var(--color-black);
+}
+.color_white .nav-item-brand svg path{
+    color: var(--color-vino-real);
+}
+.color_white #logotipo_real_plata_menu{
+    height: 100px;
+}
+.color_white #logotipo_real_plata_menu g path:nth-child(1){
+    fill: var(--color-vino-real);
+}
+.color_white .navbar-nav::before, .color_white .navbar-nav::after{
+    background-color: var(--color-gris);
+    top: 16px;
+}
+.color_white ul.navbar-nav li a{
+    font-size: 0.7rem;
+}
+.color_white .navbar-nav .active a::before{
+    background-color: var(--color-vino-real);
+}
+.color_white .nav-item-reserva{
+    background-color: var(--color-vino-real);
+}
+.color_white .nav-item-reserva a{
+    color: var(--color-white);
+}
+
 
     /* SCROLL MENÚ */
 .scroll-header{
@@ -753,5 +799,207 @@ input::-webkit-datetime-edit-fields-wrapper {
 .space_top{
     width: 100%;
     height: 180px;
-    background-color: red;
 }
+.encabezado_hacienda{
+    padding: 40px 40px;
+}
+.max-w900{
+    position: relative;
+    left: calc(50% - 450px);
+    max-width: 900px;
+    margin-bottom: 40px;
+}
+
+    /* SUBTITULO HACIENDA */
+.subtit_hacienda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1280px;
+    margin-left: calc(50% - 640px);
+}
+.cont_tit_hacienda{
+    position: relative;
+    width: 42%;
+}
+.cont_tit_hacienda .tit_primero{
+    margin-right: 40px;
+}
+.cont_tit_hacienda .capitular_red{
+    position: absolute;
+    top: -36px;
+    left: -36px;
+}
+.cont_txt_hacienda{
+    width: 30%;
+}
+
+    /* CHICHIMEQUILLAS */
+.chichimequillas{
+    padding: 60px 0px 200px 0px;
+    max-width: 1280px;
+    margin-left: calc(50% - 640px);
+}
+.cont_chicimequillas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.left_photo_chi, .right_txt_chi{
+    position: relative;
+    width: 46%;
+}
+.left_photo_chi{
+    margin-right: 4%;
+}
+.cont_front_img{
+    position: absolute;
+    bottom: -165px;
+    width: 80%;
+    left: 10%;
+}
+.cont_front_img img{
+    width: 100%;
+}
+
+    /* GALERÍA DE FOTOS */
+.gale_photo{
+    position: relative;
+}
+.cont_tit_gallery{
+    padding: 60px 0px 20px 0px;
+    text-align: center;
+}
+.gallery{ 
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.gallery figure{
+    margin-bottom: 8px;
+}
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 8px;
+}
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.gale_photo::before{
+    position: absolute;
+    content: "";   
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-vino-real);
+    bottom: 0;
+    z-index: -1;
+}
+
+/* __DETALLE HABITACIÓN__ */
+.detalle_habitacion{
+    padding: 10px 0px 80px;
+}
+.list_detalle_h{
+    margin-left: 16px;
+}
+.list_detalle_h .item_detalle{
+    position: relative;
+    font-family: var(--font-auto-pro);
+}
+.list_detalle_h .item_detalle::before{
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -14px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-vino-real);
+}
+.cont_btn_detalle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.detalle_habitacion .txt_general{
+    color: var(--color-gris);
+}
+.list_habitaciones a.item_suite{
+    font-family: var(--font-aviano-light);
+    font-size: 1.1rem;
+    color: var(--color-gris);
+    transition: all 0.3s;
+}
+.list_habitaciones a.item_suite:hover{
+    color: var(--color-black);
+}
+.item_suite li{
+    padding: 14px 0px;
+    border-top: 1px dashed var(--color-gris);
+}
+.item_suite:nth-child(1) li{
+    border-top: none;
+}
+.list_habitaciones .active{
+    position: relative;
+    color: var(--color-black)!important;
+}
+.list_habitaciones .active::before{
+    position: absolute;
+    content: "";
+    top: 16px;
+    right: 20px;
+    width: 32px;
+    height: 18px;
+    background-image: url("../images/svg/arrow-next-red.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.4s;
+}
+.list_habitaciones .active:hover::before{
+    right: 10px;
+}
+.cont_gellery_suite img:first-child{
+    width: 100%;
+}
+.cont_gellery_suite img:nth-child(2){
+    margin-right: 3%;
+}
+.cont_gellery_suite img:nth-child(2), .cont_gellery_suite img:nth-child(3){
+    margin-top: 18px;
+    width: 48%;
+}
+.cont_btn_gallery{
+    position: absolute;
+    top: calc(53%);
+    left: calc(50% - 102px);
+}
+.cont_btn_gallery .btn_principal_bn{
+    font-size: .9rem;
+    padding: 12px 24px;
+}
+
+/* __RESPONSIVE__ */
+    /* MAX 768px */
+@media screen and (max-width: 992px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+    /* MAX 768px */
+  @media screen and (max-width: 580px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
