@@ -22,12 +22,30 @@ function menuActive(){
     const header = document.getElementById("menu_dark");
 
     // HACIENDA
-    if(document.URL.includes('hacienda.html')){
+    if(document.URL.includes('hacienda.php')){
+        $('.navbar-nav > li').removeClass("active");
+        $('.navbar-nav > li:nth-child(2)').addClass("active");
         header.classList.add('color_white');
     }
-
-    // HACIENDA
-    if(document.URL.includes('master-suite.html')){
+    
+    // MASTER SUITE
+    if(document.URL.includes('master-suite.php')){
+        $('.navbar-nav > li').removeClass("active");
+        $('.navbar-nav > li:nth-child(3)').addClass("active");
+        header.classList.add('color_white');
+    }
+    
+    // EVENTOS
+    if(document.URL.includes('eventos.php')){
+        $('.navbar-nav > li').removeClass("active");
+        $('.navbar-nav > li:nth-child(5)').addClass("active");
+        header.classList.add('color_white');
+    }
+    
+    // EVENTOS
+    if(document.URL.includes('contacto.php')){
+        $('.navbar-nav > li').removeClass("active");
+        $('.navbar-nav > li:nth-child(6)').addClass("active");
         header.classList.add('color_white');
     }
 }

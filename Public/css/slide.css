@@ -8312,4 +8312,17 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y; }
 
+
+    @media (max-width: 1100px) {
+      .owl-carousel.home-slider .owl-nav {
+        bottom: 200px; } }
+
+    @media (max-width: 768px) {
+      .owl-carousel.home-slider .owl-nav {
+        bottom: 480px; } }
+
+    @media (max-width: 580px) {
+      .owl-carousel.home-slider .owl-nav {
+        bottom: 480px; } }
+
   

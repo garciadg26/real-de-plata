@@ -3,6 +3,7 @@
     --color-black:#000000;
     --color-gris:#989898;
     --color-gris-claro:#cbcbcb;
+    --color-gris-light:#F1F1F1;
     --color-vino-real:#993333;
     --color-vino-real-hover:#832121;
     --font-aviano-light: aviano-serif, serif;
@@ -73,10 +74,23 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--font-nautica);
     font-size: 2rem;
     color: var(--color-black);
+    margin-bottom: 16px;
 }
 .tit_primero_red{
     font-family: var(--font-aviano-light);
     font-size: 2rem;
+}
+.subtit_top{
+    font-family: var(--font-aviano-light);
+    color: var(--color-vino-real);
+    font-size: 1.6rem;
+    margin-bottom: 22px;
+}
+.txt_destacado{
+    color: var(--color-vino-real);
+    font-family: var(--font-auto-pro);
+    font-size: 1.35rem;
+    font-weight: bold;
 }
 p{
     margin-bottom: 0px;
@@ -140,28 +154,42 @@ body{
     font-size: 1rem;
     color: var(--color-white);
 }
-.navbar-nav .active a{
+.navbar-nav .active{
     position: relative;
 }
-.navbar-nav .active a::before{
+.navbar-nav .active::before{
     position: absolute;
     content: "";
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    margin-top: 24px;
-    margin-left: calc(50% - 10px);
+    margin-top: 36px;
+    margin-left: calc(50% - 3px);
     background-color: var(--color-white); 
 }
 .nav-item-reserva{
     border: 1px solid var(--color-vino-real);
     border-radius: 6px;
+    transition: all 0.2s;
+}
+.nav-item-reserva:hover{
+    background-color: var(--color-vino-real);
 }
 #icon_reserva_menu{
     position: relative;
     top: -1px;
     margin-right: 4px;
     width: 16px;
+}
+.nav-item-brand{
+    display: block;
+}
+.logo_movil{
+    display: none;
+}
+.ion-md-menu{
+    color: var(--color-white);
+    font-size: 2rem;
 }
 
     /* COLOR WHITE */
@@ -190,7 +218,7 @@ body{
 .color_white ul.navbar-nav li a{
     font-size: 0.7rem;
 }
-.color_white .navbar-nav .active a::before{
+.color_white .navbar-nav .active::before{
     background-color: var(--color-vino-real);
 }
 .color_white .nav-item-reserva{
@@ -198,6 +226,17 @@ body{
 }
 .color_white .nav-item-reserva a{
     color: var(--color-white);
+}
+.color_white #navbarSupportedContent{
+    background-color: var(--color-white);
+}
+.color_white .sub-item{
+    color: var(--color-black);
+    font-size: 0.7rem;
+}
+.color_white .ion-md-menu{
+    color: var(--color-vino-real);
+    font-size: 2rem;
 }
 
 
@@ -231,7 +270,7 @@ body{
 .scroll-header ul.navbar-nav li a{
     font-size: 0.7rem;
 }
-.scroll-header .navbar-nav .active a::before{
+.scroll-header .navbar-nav .active::before{
     background-color: var(--color-vino-real);
 }
 .scroll-header .nav-item-reserva{
@@ -240,6 +279,29 @@ body{
 .scroll-header .nav-item-reserva a{
     color: var(--color-white);
 }
+.scroll-header .cont_logo_movil svg{
+    position: relative;
+    top: 10px;
+    width: 140px;
+}
+.scroll-header .ion-md-menu{
+    color: var(--color-vino-real);
+}
+.scroll-header #navbarSupportedContent{
+    background-color: var(--color-white);
+}
+.scroll-header .sub-item{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color-black);
+}
+.scroll-header .submenu-item{
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gris-claro);
+}
+
 
     /* BOTTOM */
 #logotipo_real_plata_menu{
@@ -258,6 +320,9 @@ body{
     height: 1px;
     background: var(--color-white);
 }
+.navbar-nav li{
+    color: var(--color-white);
+}
 .navbar-nav li a{
     color: var(--color-white);
 }
@@ -268,11 +333,26 @@ ul.navbar-nav{
     width: 100%;
     justify-content: space-between;
 }
-ul.navbar-nav li a{
+ul.navbar-nav li a, ul.navbar-nav li{
     font-family: var(--font-aviano-light);
     font-weight: light;
     font-display: swap;
     font-size: .8rem;
+}
+
+    /* SUBMENU */
+.submenu-item{
+    display: none;
+    position: absolute;
+    padding-top: 20px;
+    margin-left: -4px;
+    transition: all 0.4s;
+}
+.sub-item:hover .submenu-item{
+    display: block;
+}
+.submenu-item .nav-link:hover{
+    background-color: rgba(255,255,255,0.16);
 }
 
 /* __SLIDER PRINCIPAL__ */
@@ -522,6 +602,9 @@ input::-webkit-datetime-edit-fields-wrapper {
     background-color: var(--color-white);
     color: var(--color-black);
 }
+.btn_principal{
+    color: var(--color-gris);
+}
 .btn_principal_bn:hover{
     background-color: var(--color-white);
     color: var(--color-black);
@@ -683,7 +766,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     width: 50%;
 }
 .cont_txt_l{
-    margin-left: 10%;
+    margin-left: 20%;
 }
 .cont_img_eventos{
     background-image: url("../images/Hotel-real-de-plata-eventos.jpg");
@@ -733,7 +816,7 @@ input::-webkit-datetime-edit-fields-wrapper {
 
 /* __FOOTER__ */
 #foot{
-    padding: 80px 0px 10px 0px;
+    padding: 60px 0px 10px 0px;
     background-color: var(--color-vino-real);
 }
 .cont_isotipo_foot img{
@@ -984,22 +1067,495 @@ input::-webkit-datetime-edit-fields-wrapper {
     font-size: .9rem;
     padding: 12px 24px;
 }
+.txt_encabezado p:nth-child(1){
+    margin-bottom: 16px;
+}
+.fila_btn_txt_descrip{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* __EVENTOS__ */
+.cont_gale_eventos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cont_gale_eventos a.item_gale_eventos, .cont_gale_eventos a.item_gale_eventos img{
+    width: 100%;
+}
+.segunda_fila_img_eventos{
+    margin-top: 28px;
+}
+.img_top20{
+    position: relative;
+    top: -120px;
+}
+    /* GALERÍA EVENTOS */
+.gallery_eventos{
+    position: relative;
+    background-image: url("../images/svg/isologo-real-de-plata-red.svg");
+    background-position: 46% 45%;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    top: 50px;
+}
+.gallery_eventos::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 180px;
+    bottom: 00px;
+    background-color: var(--color-vino-real);
+}
+
+/* __CONTACTO__ */
+.cont_txt_contacto{
+    padding: 20px 20px 0px 20px;
+}
+.cont_txt_contacto a.item_link_contacto:nth-child(1){
+    position: relative;
+    top: 40px;
+}
+.item_link_contacto{
+    font-family: var(--font-auto-pro);
+    color: var(--color-black);
+    font-size: 1rem;
+}
+
+
+    /* FORMULARIO */
+#formulario_contacto{
+    padding: 0px 0px 80px 0px;
+    background-image: url('../images/down-divider-black.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+.form_contacto h1{
+    margin-bottom: 24px;
+}
+.form_contacto input, .form_contacto textarea{
+    border: 1px solid var(--color-gris-light);
+}
+.form_contacto input::placeholder{
+    font-family: var(--font-auto-pro);
+}
+.form_contacto input[type=text], .form_contacto input[type=email], .form_contacto input[type=tel]{
+    background-color: var(--color-gris-light);
+    color: var(--color-black);
+    font-family: var(--font-auto-pro);
+    font-size: 1em;
+    font-weight: 500;
+    width: 100%;
+    height: 44px;
+    padding: 0px 16px;
+    margin-bottom: 16px;
+}
+#formulario textarea{
+    font-family: var(--font-auto-pro);
+    font-size: 1em;
+    font-weight: 500;
+    background-color: var(--color-gris-light);
+    width: 100%;
+    height: 200px;
+    padding: 16px;
+}
+#formulario input[type=submit]{
+    padding: 8px 24px;
+    font-family: var(--font-auto-pro);
+    font-size: 1em;
+    margin-top: 16px;
+    color:var(--color-white);
+    background-color: var(--color-vino-real);
+}
+
+/* __MENSAJE DE ERROR__ */
+.formulario__input-error {
+    font-family: var(--font-auto-pro);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+    display: none;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+.formulario__validacion-estado {
+    position: absolute;
+    right: 28px;
+    top: 8px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario__mensaje, .formulario__captcha{
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.formulario__mensaje-activo {
+	display: block;
+}
+.formulario__mensaje-exito {
+    margin-top: 8px;
+	font-size: 14px;
+	background-color: #1eab0b;
+    padding: 10px 15px;
+    color: var(--color-white);
+	display: none;
+}
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 1366px) {
+    .cont_txt_l{
+        margin-left: 10%;
+    }
+}
+
 
 /* __RESPONSIVE__ */
-    /* MAX 768px */
-@media screen and (max-width: 992px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+    /* MAX 1280px */
+@media screen and (max-width: 1280px) {
+    .navbar-nav .nav-item .nav-link{
+        font-size: .7rem!important;
     }
-  }
+    #menu_dark{
+        padding: 12px 6%;
+    }
+    .contain_banner > div:nth-child(1){
+        display: none;
+    }
+    .cont_txt_eventos{
+        width: 60%;
+    }
+    .cont_img_eventos{
+        width: 40%;
+    }
+}
+
+    /* MAX 1100px */
+@media screen and (max-width: 1100px) {
+    .navbar-nav .nav-item .nav-link{
+        font-size: .7rem!important;
+    }
+        /* BARRA RESERVA */
+    .form_reserv_home{
+        width: 800px;
+        margin-left: calc(50% - 400px);
+        align-items: center;
+    }
+    .row_reserv{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .row_reserv div{
+        margin-top: 8px;
+    }
+    .item_form_date{
+        width: 40%;
+    }
+    .item_form{
+        width: 40%;
+    }
+    .icon_after::before {
+        left: -130px;
+        top: -60px;
+    }
+    #fechaLlegada[type="text"], #fechaSalida[type="text"] {
+        padding-left: 0px;
+    }
+    .contain_banner > div:nth-child(2){
+        display: none;
+    }
+}
+
+    /* MAX 992px */
+@media screen and (max-width: 991px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    /* LOGO MÓVIL */
+    .logo_movil{
+        display: block;
+    }
+    .cont_logo_movil svg{
+        width: 160px;
+    }
+    .nav-item-brand{
+        display: none;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: .9rem!important;
+    }
+    .navbar-nav::before, .navbar-nav::after {
+        content: none;
+    }    
+    .navbar-nav .active::before {
+        margin-left: calc(50% - 4px);
+    }
+    .link_reservacion{
+        padding: 8px 12px!important;
+    }
+    .menu_social_top{
+        display: none;
+    }
+        /* BARRA RESERVA */
+    .form_reserv_home{
+        width: 640px;
+        margin-left: calc(50% - 320px);
+        align-items: center;
+    }
+    .icon_after::before {
+        left: -86px;
+    }
+    .contain_banner > div:nth-child(3){
+        display: none;
+    }
+    .suite_master .tit_suite {
+        margin-left: 8%;
+    }
+    .max-w400 {
+        margin-left: calc(25% - 160px);
+        width: 320px
+    }
+    .content_event{
+        flex-direction: column;
+    }
+    .cont_txt_eventos{
+        width: 100%;
+    }
+    .cont_img_eventos{
+        width: 100%;
+    }
+    .cont_txt_eventos{
+        margin-bottom: 40px;
+    }
+    .cont_img_eventos{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .cont_img_eventos img {
+        position: relative;
+        left: 0px;
+        top: -400px;
+        margin-top: 0;
+        width: auto;
+        height: 276px;
+    }
+    #navbarSupportedContent{
+        background-color: var(--color-vino-real);
+    }
+    .color_white #logotipo_real_plata_menu{
+        margin-top: 0px;
+    }
+    .scroll-header .cont_logo_movil svg {
+        position: relative;
+        top: 0px;
+        width: 140px;
+    }
+}
+
+    /* MAX 768px */
+@media screen and (max-width: 768px) {
+    /* BARRA RESERVA */
+    .form_reserv_home{
+        width: 90%;
+        margin-left: calc(5%);
+        align-items: center;
+    }
+    .item_form_date, .item_form {
+        width: 100%;
+    }
+    .icon_after::before {
+        left: 54px;
+    }
+    .tit_slider{
+        top: -400px;
+    }
+
+    /* BARRA RESERVA */
+    .form_reserv_home{
+        flex-direction: column;
+    }
+    .row_reserv > div{
+        margin: 8px 0px;
+        background-color: #fff;
+        border: 1px solid var(--color-gris-claro);
+        padding: 8px 8px;
+    }
+    .row_reserv > div:nth-child(4){
+        margin-bottom: 24px;
+    }
+    .item_form_date input, .item_form input, .item_form select{
+        width: 100%!important;    
+    }
+    .form_reserv_home{
+        padding: 32px 16px;
+    }
+    .row_reserv > div:not(:last-child)::before{
+        content: none;
+    }
+    .icon_after::before {
+        left: calc(50% - 20px);
+        top: -22px;
+    }
+    .icon_after{
+        position: static;
+    }
+    .contain_banner{
+        justify-content: space-around;
+    }
+
+    .contain_banner > div:nth-child(4){
+        display: none;
+    }
+    .txt_nota_h{
+        display: block;
+        margin-bottom: 6px;
+    }
+    .notas_habitaciones::before{
+        margin-top: 100px;
+    }
+    .max-w400 {
+        margin-left: calc(25% - 140px);
+        width: 280px;
+        margin-bottom: 0;
+    }
+    .suite_master .cont_txt_overlay{
+        padding: 80px 16px;
+    }
+    .cont_txt_eventos {
+        margin-bottom: 180px;
+    }
+    .cont_img_eventos{
+        justify-content: center;
+    }
+    .cont_img_eventos img{
+        top: -140px;
+    }
+    .cont_isotipo_foot{
+        margin-bottom: 40px;
+    }
+    #foot .list_social{
+        margin-top: 20px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .list_social a {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
   
-    /* MAX 768px */
-  @media screen and (max-width: 580px) {
+    /* MAX 580px */
+@media screen and (max-width: 580px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-  }
+    .tit_slider{
+        top: -410px;
+        font-size: 1.8rem;
+    }
+    
+    /* BARRA RESERVA */
+    .form_reserv_home{
+        flex-direction: column;
+    }
+    .row_reserv > div{
+        margin: 8px 0px;
+        background-color: #fff;
+        border: 1px solid var(--color-gris-claro);
+        padding: 8px 8px;
+    }
+    .row_reserv > div:nth-child(4){
+        margin-bottom: 24px;
+    }
+    .item_form_date input, .item_form input, .item_form select{
+        width: 100%!important;    
+    }
+    .form_reserv_home{
+        padding: 32px 16px;
+    }
+    .row_reserv > div:not(:last-child)::before{
+        content: none;
+    }
+    .icon_after::before {
+        left: calc(50% - 20px);
+        top: -22px;
+    }
+    .icon_after{
+        position: static;
+    }
+    .contain_banner{
+        justify-content: center;
+    }
+    .contain_banner > div:nth-child(5){
+        display: none;
+    }
+    .image_banner{
+        width: 300px;
+    }
+    .max-w400 {
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .cont_txt_overlay::before {
+        bottom: 33px;
+    }
+    .historia_home > div.row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .max-w0 {
+        width: 100%;
+    }
+    .max-w {
+        position: relative;
+        margin-left: 0;
+        width: 100%;
+    }
+    .cont_txt_l {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .tit_segundo_bn .capitular {
+        top: 0px;
+        left: 16px;
+    }
+    #histHome{
+        padding: 60px 0px 0px 0px;
+    }
+}
