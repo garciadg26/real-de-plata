@@ -20,12 +20,16 @@
     <section id="formulario_contacto" class="form_contacto">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 text-center">
                     <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-contacto.jpg" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 img_center">
                     <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-contacto2.jpg" alt="">
                     <div class="cont_txt_contacto">
+                        <p class="txt_general">*Es necesaria previa reservación <br>
+                                                **Instalaciones solo adultos <br>
+                                                ***No aceptamos mascotas
+                        </p>
                         <p class="txt_general">Camino Real a Chichimequillas No. 1.
                             Col. Chichimequillas, El Marqués, Qro.
                             C.P. 76250</p>
@@ -33,7 +37,7 @@
                         <a class="item_link_contacto" href="mailto:contactorealdeplata.com">contactorealdeplata.com</a>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                     <h1 class="tit_primero">Contáctanos</h1>
                     <!-- FORMULARIO -->
                     <form id="formulario" class="form_contacto" method="post" action="">
@@ -101,7 +105,7 @@
 
     <?php include_once "Public/include/footer.php" ?>
     
-    <script type="text/javascript" src="Public/js/form_contacto.js"></script>
+    <script type="text/javascript" src="Public/js/form_contacto.js?ver=1.1.10"></script>
 
 </body>
 </html>

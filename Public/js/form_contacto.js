@@ -86,31 +86,31 @@ formulario.addEventListener('submit', e=>{
                 }
             }
         
-            //ENVIAMOS LOS DATOS A PHP
-            // let datos = new FormData(formulario);
-            // //creamos un objeto
-            // let peticion = {
-            //     method:'POST',
-            //     body:datos,
-            // }
-            // fetch('Public/php/formulario.php', peticion)
-            // .then(respuesta => respuesta.json())
-            // .then(respuesta =>{
+            // ENVIAMOS LOS DATOS A PHP
+            let datos = new FormData(formulario);
+            //creamos un objeto
+            let peticion = {
+                method:'POST',
+                body:datos,
+            }
+            fetch('Public/php/formContacto.php', peticion)
+            .then(respuesta => respuesta.json())
+            .then(respuesta =>{
         
-            //     for(const resultado in respuesta){
-            //         let padre = document.querySelector('#'+resultado);
-            //         padre.classList.add('resaltar');
-            //         let txt = document.createElement('p');
-            //         txt.classList.add('text-danger');
-            //         txt.classList.add('remover');
-            //         txt.innerHTML = respuesta[resultado];
-            //         document.querySelector('#'+resultado).insertAdjacentElement('afterend', txt);
-            //     }
+                for(const resultado in respuesta){
+                    let padre = document.querySelector('#'+resultado);
+                    padre.classList.add('resaltar');
+                    let txt = document.createElement('p');
+                    txt.classList.add('text-danger');
+                    txt.classList.add('remover');
+                    txt.innerHTML = respuesta[resultado];
+                    document.querySelector('#'+resultado).insertAdjacentElement('afterend', txt);
+                }
         
-            // }).catch(error => console.log('Error', error));
-            // //FIN DATOS PHP
-            // formulario.reset();
-            // return true;
+            }).catch(error => console.log('Error', error));
+            //FIN DATOS PHP
+            formulario.reset();
+            //return true;
 
         
         } else {

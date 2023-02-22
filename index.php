@@ -24,33 +24,51 @@
             <div class="">
                 <!-- RESERVACIONES -->
                 <div class="cont_reserv">
-                    <form class="form_reserv_home" action="" method="post">
+                    <form id="banner_reserva" class="form_reserv_home" action="" method="post">
                         <div class="row_reserv">
                             <div class="item_form_date">
+                                <!-- Grupo: Fecha de llegada -->                                
                                 <div class="icon_after"></div>
                                 <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Fecha de llegada" onfocus="(this.type='date')" onblur="(this.type='date')">
                                 <!-- <p class="txt_date">Fecha de llegada</p> -->
                             </div>
-                            <div class="item_form_date">
-                                <input type="text" name="fechaSalida" id="fechaSalida" placeholder="Fecha de salida" onfocus="(this.type='date')" onblur="(this.type='date')">
-                                <!-- <p class="txt_date">Fecha de salida</p> -->
+                            <div class="item_form">
+                                <!-- Grupo: Teléfono -->
+                                <div class="formulario__grupo" id="grupo__telefono">
+                                    <div class="formulario__grupo-input">
+                                        <img src="Public/images/svg/icon_phone_gris.svg" alt="">
+                                        <input class="formulario__input" type="tel" name="telefono" id="telefono" placeholder="Número de teléfono">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                        <!-- <p class="txt_date">Fecha de salida</p> -->
+                                    </div>
+                                </div>
                             </div>
                             <div class="item_form">
-                                <img src="Public/images/svg/icon-numero-personas.svg" alt="">
-                                <input type="number" name="numPersonas" id="numPersonas" placeholder="No. de personas">
+                                <!-- Grupo: Número de personas -->
+                                <div class="formulario__grupo" id="grupo__numPersonas">
+                                    <div class="formulario__grupo-input">
+                                        <img src="Public/images/svg/icon-numero-personas.svg" alt="">
+                                        <input class="formulario__input" type="number" name="numPersonas" id="numPersonas" placeholder="No. de personas">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class="item_form">
                                 <img src="Public/images/svg/icon-motivo.svg" alt="">
-                                <select name="" id="selectMotivo">
+                                <select name="selectMotivo" id="selectMotivo">
                                     <option value="">Motivo de su visita</option>
                                     <option value="evento">Evento</option>
                                     <option value="vacaciones">Vacaciones</option>
                                 </select>
-                                <!-- <input type="text" name="" id="" placeholder="Motivo de su visita"> -->
                             </div>
                         </div>
                         <div class="btn_reserv">
-                            <button class="btn_reservar_ahora" type="submit">RESERVAR AHORA</button>
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Al enviar datos. </p>
+                            </div>
+                            <input class="btn_reservar_ahora" type="submit" value="Reservar ahora">
+                            <!-- RESERVAR AHORA -->
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>Reservacion:</b> Enviada exitosamente!</p>
                         </div>
                     </form>
                 </div>
@@ -172,5 +190,6 @@
     <script type="text/javascript" src="Public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="Public/js/slider.js"></script>
     
+    <script type="text/javascript" src="Public/js/banner_reserva.js?ver=1.1.15"></script>
 </body>
 </html>

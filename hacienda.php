@@ -1,5 +1,8 @@
 <?php $title = "Hacienda - Mesón Real de Plata"; ?>
 <?php include_once "Public/include/head.php"; ?>
+
+    <link rel="stylesheet" href="Public/css/jquery.fancybox-1.3.4.css?ver=1.1.1">
+
 </head>
 <body>
 
@@ -51,52 +54,70 @@
         <div class="cont_tit_gallery">
             <h1 class="tit_primero"><span class="capitular_red">G</span>alería</h1>
         </div>
-        <div class="row gallery">
+        <div id="cont_gallery_photo" class="gallery">
             <!-- COLUMNA 1 -->
             <div class="column">
-                <figure class="gallery_item gallery_item_1">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria1.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
-                <figure class="gallery_item gallery_item_5">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria5.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
-                <figure class="gallery_item gallery_item_9">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria9.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
+                <a class="gallery-group gallery_item_1" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-01.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-01.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_5" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-05.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-05.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_9" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-09.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-09.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_9" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-11.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-11.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
             </div>
             <!-- COLUMNA 2 -->
             <div class="column">
-                <figure class="gallery_item gallery_item_2">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria2.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
-                <figure class="gallery_item gallery_item_6">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria6.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
-                <figure class="gallery_item gallery_item_10">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria10.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
+                <a class="gallery-group gallery_item_2" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-02.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-02.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_6" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-06.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-06.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_10" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-10.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-10.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_10" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-12.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-12.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
             </div>
             <!-- COLUMNA 3 -->
             <div class="column">
-                <figure class="gallery_item gallery_item_3">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria3.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
-                <figure class="gallery_item gallery_item_7">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria7.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
+                <a class="gallery-group gallery_item_3" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-03.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-03.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_7" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-07.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-07.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_7" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-13.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-13.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
             </div>
             <!-- COLUMNA 4 -->
             <div class="column">
-                <figure class="gallery_item gallery_item_4">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria4.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
-                <figure class="gallery_item gallery_item_8">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria8.jpg" alt="Hotel Mesón Real De Plata">
-                </figure>
+                <a class="gallery-group gallery_item_4" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-04.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-04.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_8" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-08.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-08.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
+                <a class="gallery-group gallery_item_8" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-14.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-14.jpg" alt="Hotel Mesón Real De Plata">
+                </a>
             </div>
         </div>
     </section>
     <?php include_once "Public/include/footer.php" ?>
+
+    <!-- FANCYBOX -->
+    <script type="text/javascript" src="Public/js/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="Public/js/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="Public/js/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="Public/js/popFancy.js"></script>
 
 </body>
 </html>

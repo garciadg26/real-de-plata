@@ -11,11 +11,11 @@
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.0.10">
+    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.26">
 
     <!-- SLIDER -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="Public/css/slide.css">
+    <link rel="stylesheet" href="Public/css/slide.css?ver=1.1.12">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="Public/css/ionicons.min.css">

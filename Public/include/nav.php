@@ -44,15 +44,25 @@
                         Habitaciones
                         <ul class="submenu-item">
                             <li class="submeny_item">
-                                <a href="master-suite.php" class="nav-link">Junior Suite</a>
+                                <a href="junior-suite.php" class="nav-link">Junior Suite</a>
                             </li>
                             <li class="submeny_item">
                                 <a href="master-suite.php" class="nav-link">Master Suite</a>
                             </li>
                             <li class="submeny_item">
-                                <a href="master-suite.php" class="nav-link">Master Suite</a>
+                                <a href="superior-suite.php" class="nav-link">Superior Suite</a>
                             </li>
                         </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Habitaciones
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="junior-suite.php">Junior Suite</a>
+                            <a class="dropdown-item" href="master-suite.php">Master Suite</a>
+                            <a class="dropdown-item" href="superior-suite.php">Superior Suite</a>
+                        </div>
                     </li>
                     <li class="nav-item nav-item-brand">
                         <a href="index.php" class="nav-link">
@@ -66,7 +76,7 @@
                         <a href="contacto.php" class="nav-link">Contacto</a>
                     </li>
                     <li class="nav-item nav-item-reserva">
-                        <a href="#" class="nav-link link_reservacion">
+                        <a href="reservar.php" class="nav-link link_reservacion">
                             <svg id="icon_reserva_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7.814">
                                 <g transform="translate(-201.799 -686.482)">
                                     <path d="M212.412,692.147h-.75a3.863,3.863,0,0,0-7.726,0h-.75a4.613,4.613,0,0,1,9.226,0Z" fill="#fff"/>

@@ -167,6 +167,9 @@ body{
     margin-left: calc(50% - 3px);
     background-color: var(--color-white); 
 }
+.navbar-nav .active:nth-child(3):before{
+    margin-top: 26px;
+}
 .nav-item-reserva{
     border: 1px solid var(--color-vino-real);
     border-radius: 6px;
@@ -190,6 +193,9 @@ body{
 .ion-md-menu{
     color: var(--color-white);
     font-size: 2rem;
+}
+#menu_dark .dropdown{
+    display: none;
 }
 
     /* COLOR WHITE */
@@ -350,6 +356,7 @@ ul.navbar-nav li a, ul.navbar-nav li{
 }
 .sub-item:hover .submenu-item{
     display: block;
+    width: 180px;
 }
 .submenu-item .nav-link:hover{
     background-color: rgba(255,255,255,0.16);
@@ -439,19 +446,19 @@ ul.navbar-nav li a, ul.navbar-nav li{
     padding-left: 16px;
     font-family: var(--font-auto-pro);
 }
-#fechaLlegada, #fechaSalida{
+.form_reserv_home #fechaLlegada, .form_reserv_home #telefono{
     border: none;
     width: 144px;
 }
-#fechaLlegada[type="text"], #fechaSalida[type="text"]{
+.form_reserv_home #fechaLlegada[type="text"]{
     padding-left: 16px;
 }
-#fechaLlegada[type="date"], #fechaSalida[type="date"]{
+.form_reserv_home #fechaLlegada[type="date"], .form_reserv_home #telefono[type="tel"]{
     font-family: var(--font-auto-pro);
     color: var(--color-gris);
     font-size: 1rem;
 }
-#numPersonas{
+.form_reserv_home #numPersonas{
     width: 126px;
 }
 #selectMotivo{
@@ -586,7 +593,7 @@ input::-webkit-datetime-edit-fields-wrapper {
 }
 .btn_comun{
     font-family: var(--font-aviano-light);
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     position: relative;
     top: -6px;
     font-weight: normal;
@@ -701,7 +708,7 @@ input::-webkit-datetime-edit-fields-wrapper {
               transition: none;
 }
 .cont_txt_overlay:hover::after{
-    width: 120%;
+    width: 100%;
     background-color: rgba(255,255,255,0);
     
       -webkit-transition: all 0.6s ease-in-out;
@@ -718,10 +725,10 @@ input::-webkit-datetime-edit-fields-wrapper {
     background-size: cover;
 }
 .suite_02{
-    background-image: url("../images/Hotel-real-de-plata-master-suite.jpg");
+    background-image: url("../images/hotel-real-de-plata-superior-suite.jpg");
 }
 .suite_03{
-    background-image: url("../images/hotel-real-de-plata-superior-suite.jpg");
+    background-image: url("../images/Hotel-real-de-plata-master-suite.jpg");
 }
 .suite_05{
     background-image: url("../images/hotel-real-de-plata-junior-suite.jpg");
@@ -884,7 +891,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     height: 180px;
 }
 .encabezado_hacienda{
-    padding: 40px 40px;
+    padding: 40px 40px 100px 40px;
 }
 .max-w900{
     position: relative;
@@ -947,13 +954,16 @@ input::-webkit-datetime-edit-fields-wrapper {
     width: 100%;
 }
 
-    /* GALERÍA DE FOTOS */
+    /* GALERÍA DE FOTOS */    
 .gale_photo{
     position: relative;
 }
 .cont_tit_gallery{
     padding: 60px 0px 20px 0px;
     text-align: center;
+}
+#cont_gallery_photo{
+    display: flex;
 }
 .gallery{ 
     -ms-flex-wrap: wrap; /* IE10 */
@@ -970,7 +980,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     padding: 0 8px;
 }
 .column img{
-    margin-top: 8px;
+    margin-top: 16px;
     vertical-align: middle;
     width: 100%;
 }
@@ -1060,7 +1070,7 @@ input::-webkit-datetime-edit-fields-wrapper {
 }
 .cont_btn_gallery{
     position: absolute;
-    top: calc(53%);
+    top: 376px;
     left: calc(50% - 102px);
 }
 .cont_btn_gallery .btn_principal_bn{
@@ -1095,7 +1105,7 @@ input::-webkit-datetime-edit-fields-wrapper {
 .gallery_eventos{
     position: relative;
     background-image: url("../images/svg/isologo-real-de-plata-red.svg");
-    background-position: 46% 45%;
+    background-position: 48% 45%;
     background-repeat: no-repeat;
     background-size: 48px;
     top: 50px;
@@ -1118,6 +1128,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     top: 40px;
 }
 .item_link_contacto{
+    display: block;
     font-family: var(--font-auto-pro);
     color: var(--color-black);
     font-size: 1rem;
@@ -1141,7 +1152,7 @@ input::-webkit-datetime-edit-fields-wrapper {
 .form_contacto input::placeholder{
     font-family: var(--font-auto-pro);
 }
-.form_contacto input[type=text], .form_contacto input[type=email], .form_contacto input[type=tel]{
+.form_contacto input[type=text], .form_contacto input[type=email], .form_contacto input[type=tel], .form_contacto input[type=date], .form_contacto input[type=number], .form_contacto select{
     background-color: var(--color-gris-light);
     color: var(--color-black);
     font-family: var(--font-auto-pro);
@@ -1152,7 +1163,19 @@ input::-webkit-datetime-edit-fields-wrapper {
     padding: 0px 16px;
     margin-bottom: 16px;
 }
-#formulario textarea{
+.form_contacto input[type=number]{
+    width: 100%;
+}
+#reservar .item_form_date{
+    margin: 0px 0px;
+}
+#reservar #selectMotivo{
+    background-color: var(--color-gris-light);
+}
+.form_contacto input[type=date]{
+    padding: 0px 0px;
+}
+#formulario textarea, #reservar textarea{
     font-family: var(--font-auto-pro);
     font-size: 1em;
     font-weight: 500;
@@ -1161,13 +1184,16 @@ input::-webkit-datetime-edit-fields-wrapper {
     height: 200px;
     padding: 16px;
 }
-#formulario input[type=submit]{
+#formulario input[type=submit], #reservar input[type=submit]{
     padding: 8px 24px;
     font-family: var(--font-auto-pro);
     font-size: 1em;
     margin-top: 16px;
     color:var(--color-white);
     background-color: var(--color-vino-real);
+}
+#banner_reserva .formulario__grupo-input{
+    display: flex;
 }
 
 /* __MENSAJE DE ERROR__ */
@@ -1235,8 +1261,28 @@ input::-webkit-datetime-edit-fields-wrapper {
     .cont_txt_l{
         margin-left: 10%;
     }
+    .chichimequillas {
+        padding: 60px 0px 120px 0px;
+        max-width: 1024px;
+        margin-left: calc(50% - 512px);
+    }
 }
 
+
+/* __AVISO DE PRIVACIDAD__ */
+#aviso_p{
+    padding-bottom: 60px;
+}
+.list_aviso_p li{
+    font-family: var(--font-auto-pro);
+    font-size: 1rem;
+}
+.list_letras{
+    list-style-type: lower-alpha;
+}
+.list_romano{
+    list-style-type: upper-roman;
+}
 
 /* __RESPONSIVE__ */
     /* MAX 1280px */
@@ -1256,7 +1302,37 @@ input::-webkit-datetime-edit-fields-wrapper {
     .cont_img_eventos{
         width: 40%;
     }
+    .list_habitaciones a.item_suite{
+        font-size: .9rem;
+    }
+    .list_habitaciones .active::before{
+        right: 0px;
+    }
+    .cont_gellery_suite{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cont_gellery_suite img:nth-child(2), .cont_gellery_suite img:nth-child(3) {
+        margin-top: 22px;
+        width: 47%;
+    }
+    .cont_btn_gallery {
+        top: 314px;
+    }
 }
+
+    /* MAX 1200px */
+@media screen and (max-width: 1200px) {
+    .gallery_eventos{
+        background-position: 50% 45%;
+    }
+    .img_top20 {
+        position: relative;
+        top: -108px;
+    }
+}
+
 
     /* MAX 1100px */
 @media screen and (max-width: 1100px) {
@@ -1291,6 +1367,15 @@ input::-webkit-datetime-edit-fields-wrapper {
     }
     .contain_banner > div:nth-child(2){
         display: none;
+    }
+    .subtit_hacienda{
+        max-width: 900px;
+        margin-left: calc(50% - 450px);
+    }
+    .chichimequillas {
+        padding: 60px 0px 80px 0px;
+        max-width: 900px;
+        margin-left: calc(50% - 450px);
     }
 }
 
@@ -1345,6 +1430,10 @@ input::-webkit-datetime-edit-fields-wrapper {
         margin-left: calc(25% - 160px);
         width: 320px
     }
+    .max-w900{
+        left: 0;
+        max-width: 100%;
+    }
     .content_event{
         flex-direction: column;
     }
@@ -1380,6 +1469,51 @@ input::-webkit-datetime-edit-fields-wrapper {
         position: relative;
         top: 0px;
         width: 140px;
+    }
+    .subtit_hacienda{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .encabezado_hacienda{
+        padding: 0px 16px 40px 16px;
+    }
+    .cont_tit_hacienda {
+        width: 50%;
+    }
+    .cont_txt_hacienda {
+        width: 36%;
+    }
+    .chichimequillas {
+        padding: 60px 0px 0px 0px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .left_photo_chi, .right_txt_chi{
+        width: 80%;
+    }
+    .left_photo_chi {
+        margin-right: 0;
+        text-align: center;
+    }
+    .right_txt_chi{
+        margin-top: 200px;
+    }
+    .img_top20 {
+        position: relative;
+        top: -75px;
+    }
+    .form_contacto .tit_primero{
+        margin-top: 40px;
+    }
+    #menu_dark .sub-item{
+        display: none;
+    }
+    #menu_dark .dropdown{
+        display: block;
+        text-align: center;
+    }
+    #menu_dark .dropdown-item{
+        padding: 0.5rem 1.5rem;
     }
 }
 
@@ -1473,6 +1607,31 @@ input::-webkit-datetime-edit-fields-wrapper {
         margin-left: 12px;
         margin-right: 12px;
     }
+    .cont_gellery_suite{
+        margin-bottom: 40px;
+    }
+    .tit_primero_red{
+        font-size: 1.4rem;
+    }
+    .primera_fila_img_eventos .col-md-5 img{
+        margin-top: 20px;
+    }
+    .img_top20 {
+        top: 0px;
+    }
+    .segunda_fila_img_eventos {
+        margin-top: 20px;
+    }
+    .segunda_fila_img_eventos .col-md-7{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .img_center{
+        text-align: center;
+    }
+    .img_center img{
+        margin-top: 20px;
+    }
 }
 
   
@@ -1484,8 +1643,8 @@ input::-webkit-datetime-edit-fields-wrapper {
         max-width: 100%;
     }
     .tit_slider{
-        top: -410px;
-        font-size: 1.8rem;
+        top: -280px;
+        font-size: 1.2rem;
     }
     
     /* BARRA RESERVA */
@@ -1496,7 +1655,7 @@ input::-webkit-datetime-edit-fields-wrapper {
         margin: 8px 0px;
         background-color: #fff;
         border: 1px solid var(--color-gris-claro);
-        padding: 8px 8px;
+        padding: 2px 8px;
     }
     .row_reserv > div:nth-child(4){
         margin-bottom: 24px;
@@ -1505,7 +1664,7 @@ input::-webkit-datetime-edit-fields-wrapper {
         width: 100%!important;    
     }
     .form_reserv_home{
-        padding: 32px 16px;
+        padding: 26px 16px 16px 16px;
     }
     .row_reserv > div:not(:last-child)::before{
         content: none;
@@ -1557,5 +1716,56 @@ input::-webkit-datetime-edit-fields-wrapper {
     }
     #histHome{
         padding: 60px 0px 0px 0px;
+    }
+    .icon_back, .icon_next {
+        width: 50px;
+        height: 24px;
+    }
+    .scroll-header #logotipo_real_plata_menu {
+        display: inline-block;
+        margin-top: 0px;
+        height: 80px;
+    }
+    .suite_master .suite_number::after {
+        top: 40%;
+        margin-left: 6px;
+    }
+    .subtit_hacienda{
+        flex-wrap: wrap;
+        padding: 0px 16px;
+    }
+    .cont_tit_hacienda{
+        margin-bottom: 30px;
+    }
+    .cont_tit_hacienda, .cont_txt_hacienda {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .cont_front_img{
+        bottom: -70px;
+    }
+    .right_txt_chi {
+        margin-top: 200px;
+    }
+    .right_txt_chi {
+        margin-top: 120px;
+    }
+    .cont_btn_gallery {
+        top: calc(55%);
+    }
+    .encabezado_hacienda {
+        padding: 0px 16px 0px 16px;
+    }
+    .row_reserv div {
+        margin-top: 0px;
+    }
+    #banner_reserva .item_form{
+        justify-content: start;
+    }
+    #banner_reserva #fechaLlegada[type="text"] {
+        padding-left: 0px;
+    }
+    #encab_hacienda{
+        margin-bottom: 60px;
     }
 }

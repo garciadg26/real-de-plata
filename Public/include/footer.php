@@ -81,7 +81,8 @@
             </div>
             <div class="legales">
                 <p class="txt_general_bn">® 2023,  Derechos Reservados</p>
-                <a href="#" class="txt_general_bn">Términos y condiciones</a>
+                <a href="aviso-privacidad.php" class="txt_general_bn">Aviso de privacidad</a>
+                <a href="politicas-cancelacion.php" class="txt_general_bn">Políticas de cancelación</a>
             </div>
         </div>
     </footer>
@@ -89,4 +90,4 @@
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.0.10"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.16"></script>
