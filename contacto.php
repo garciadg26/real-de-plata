@@ -1,4 +1,6 @@
-<?php $title = "Contacto - Mesón Real de Plata"; ?>
+<?php $title = "Contacto - Mesón Real De Plata"; ?>
+<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+
 <?php include_once "Public/include/head.php"; ?>
 
 </head>
@@ -12,8 +14,8 @@
 
     <!-- EVENTOS -->
     <section class="encabezado_hacienda text-center" id="encab_hacienda">
-        <h3 class="subtitulo">Contacto</h3>
-        <h2 class="tit_primero_red max-w900">Detalles que <br> cuentan historias</h2>
+        <h3 class="subtitulo home__photo1">Contacto</h3>
+        <h2 class="tit_primero_red max-w900 home__photo3">Detalles que <br> cuentan historias</h2>
     </section>
 
     <!-- FORMULARIO CONTACTO -->
@@ -21,11 +23,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 text-center">
-                    <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-contacto.jpg" alt="">
+                    <img class="img-fluid home__photo1" src="Public/images/hotel-meson-real-de-plata-contacto.jpg" alt="">
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 img_center">
-                    <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-contacto2.jpg" alt="">
-                    <div class="cont_txt_contacto">
+                    <img class="img-fluid home__photo3" src="Public/images/hotel-meson-real-de-plata-contacto2.jpg" alt="">
+                    <div class="cont_txt_contacto home__photo5">
                         <p class="txt_general">*Es necesaria previa reservación <br>
                                                 **Instalaciones solo adultos <br>
                                                 ***No aceptamos mascotas
@@ -34,11 +36,11 @@
                             Col. Chichimequillas, El Marqués, Qro.
                             C.P. 76250</p>
                         <a class="item_link_contacto" href="tel:4227040532">(422) 704 0532</a>
-                        <a class="item_link_contacto" href="mailto:contactorealdeplata.com">contactorealdeplata.com</a>
+                        <a class="item_link_contacto" href="mailto:contacto@mesonrealdeplata.com">contacto@mesonrealdeplata.com</a>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                    <h1 class="tit_primero">Contáctanos</h1>
+                    <h1 class="tit_primero home__photo1">Contáctanos</h1>
                     <!-- FORMULARIO -->
                     <form id="formulario" class="form_contacto" method="post" action="">
                         <div class="row form_row1">

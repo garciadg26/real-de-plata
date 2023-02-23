@@ -29,12 +29,12 @@
                 </div>
                 <div class="col-md-3">
                     <ul class="list_contact_foot">
-                        <a href="tel:contacto@realdeplata.com" class="link_contact_foot">
+                        <a href="mailto:contacto@mesonrealdeplata.com" class="link_contact_foot">
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 20">
                                     <path class="icon_mail" d="M215.51-43.784H204.73a3.017,3.017,0,0,1-3.22-3.223V-60.564a3.014,3.014,0,0,1,3.223-3.22h21.557a3.011,3.011,0,0,1,3.22,3.22q0,6.842,0,13.683a2.971,2.971,0,0,1-2.232,2.985,3.792,3.792,0,0,1-.958.106Q220.912-43.777,215.51-43.784Zm0-18h-6.84c-1.364,0-2.727,0-4.091,0a1,1,0,0,0-1.047.8c-.1.462-.042.588.372.812q5.687,3.058,11.368,6.126a.471.471,0,0,0,.512-.017q2.646-1.432,5.3-2.859,3.087-1.663,6.179-3.324c.154-.084.258-.16.255-.37a1.044,1.044,0,0,0-1.17-1.173Zm-11.88,15.442a1.1,1.1,0,0,0,1.072.563q10.806-.008,21.615-.006a2.457,2.457,0,0,0,.249,0,.985.985,0,0,0,.82-.543.923.923,0,0,0-.1-.092q-4.578-3.2-9.153-6.415a.32.32,0,0,0-.392-.014c-.546.305-1.1.588-1.646.893a1.087,1.087,0,0,1-1.151,0c-.526-.3-1.067-.566-1.59-.865a.418.418,0,0,0-.526.034q-3.293,2.323-6.6,4.625Zm-.1-11.757v9.38l7.577-5.3Zm16.385,4.08,7.571,5.3V-58.1Z" transform="translate(-201.51 63.784)" fill="#fff"/>
                                 </svg>
-                                contacto@realdeplata.com
+                                contacto@mesonrealdeplata.com
                             </li>
                         </a>
                         <a href="tel:4427040532" class="link_contact_foot">
@@ -90,4 +90,7 @@
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.16"></script>
+    <script type="text/javascript" src="Public/js/main.js?ver=1.1.17"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>

@@ -1,4 +1,6 @@
-<?php $title = "Hacienda - Mesón Real de Plata"; ?>
+<?php $title = "Hacienda - Mesón Real De Plata"; ?>
+<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+
 <?php include_once "Public/include/head.php"; ?>
 
     <link rel="stylesheet" href="Public/css/jquery.fancybox-1.3.4.css?ver=1.1.1">
@@ -13,17 +15,17 @@
 
     <!-- HACIENDA -->
     <section class="encabezado_hacienda text-center" id="encab_hacienda">
-        <h3 class="subtitulo">Hacienda</h3>
-        <h2 class="tit_primero_red max-w900">Cada rincón está pensado para regalarte el mejor de los recuerdos</h2>
-        <img class="img-fluid" src="Public/images/hotel-meson-hacienda-real-de-plata.jpg" alt="">
+        <h3 class="subtitulo home__photo1">Hacienda</h3>
+        <h2 class="tit_primero_red max-w900 home__photo3">Cada rincón está pensado para regalarte el mejor de los recuerdos</h2>
+        <img class="img-fluid home__photo5" src="Public/images/hotel-meson-hacienda-real-de-plata.jpg" alt="">
     </section>
 
     <!-- PATRIMONIO HUMANIDAD -->
     <section class="subtit_hacienda" id="subtit_hacienda">
         <div class="cont_tit_hacienda">
-            <h2 class="tit_primero"><span class="capitular_red">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h2>
+            <h2 class="tit_primero home__left1"><span class="capitular_red">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h2>
         </div>
-        <div class="cont_txt_hacienda">
+        <div class="cont_txt_hacienda home__right2">
             <p class="txt_general">Un lugar lleno de historia donde vives la naturaleza con el lujo y la belleza de una hacienda tradicional.</p>
             <p class="txt_general">Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano.</p>
             <p class="txt_general">Sala de masajes* / Gimnasio / Cantina / Bicicletas/  Jacuzzi exterior / Clases de yoga / Traslado desde y hacia el aeropuerto / Campo de práctica para golf.</p>
@@ -34,12 +36,12 @@
     <section class="chichimequillas" id="chichimequillas">
         <div class="cont_chicimequillas">
             <div class="left_photo_chi">
-                <img class="img-fluid img_bg_chi" src="Public/images/photo-grand-hacienda-chichimequillas.jpg" alt="">
+                <img class="img-fluid img_bg_chi home__photo1" src="Public/images/photo-grand-hacienda-chichimequillas.jpg" alt="">
                 <div class="cont_front_img">
-                    <img class="img-fluid img_front_chi" src="Public/images/photo-grand-hacienda-chichimequillas-front.jpg" alt="">
+                    <img class="img-fluid img_front_chi home__photo3" src="Public/images/photo-grand-hacienda-chichimequillas-front.jpg" alt="">
                 </div>
             </div>
-            <div class="right_txt_chi">
+            <div class="right_txt_chi home__photo5">
                 <h1 class="tit_primero"><span class="capitular_red">L</span>a Gran Hacienda De Chichimequillas</h1>
                 <p class="txt_general">La arquitectura colonial queretana tuvo su germen en las guarniciones militares que, durante el tiempo de la conquista en el siglo XVI, además de frenar a los sublevados, brindaban seguridad a viajeros, hacendados y a grandes caravanas de cargamentos minerales —plata, principalmente— provenientes de las minas de Zacatecas, San Luis Potosí y Guanajuato.</p>
                 <p class="txt_general">A mediados del siglo XVII, los frailes Carmelitas Descalzos se establecieron en lo que se convertiría en la Gran Hacienda de Chichimequillas. Fueron ellos quienes agregaron nuevas construcciones para satisfacer la compleja vida monacal: hospedería, cuadras, molino, granero, etc. El mesón fue transformándose paulatinamente, surgieron espacios para la catequesis y capacitación para los indígenas redimidos y bautizados, entre ellos los chichimecas, quienes aprendieron diferentes oficios, como la agricultura, albañilería, carpintería y la talla de la piedra.</p>
@@ -57,55 +59,55 @@
         <div id="cont_gallery_photo" class="gallery">
             <!-- COLUMNA 1 -->
             <div class="column">
-                <a class="gallery-group gallery_item_1" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-01.jpg">
+                <a class="gallery-group gallery_item_1 home__photo1" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-01.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-01.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_5" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-05.jpg">
+                <a class="gallery-group gallery_item_5 home__photo5" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-05.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-05.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_9" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-09.jpg">
+                <a class="gallery-group gallery_item_9 home__photo9" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-09.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-09.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_9" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-11.jpg">
+                <a class="gallery-group gallery_item_9 home__photo11" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-11.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-11.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
             </div>
             <!-- COLUMNA 2 -->
             <div class="column">
-                <a class="gallery-group gallery_item_2" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-02.jpg">
+                <a class="gallery-group gallery_item_2 home__photo2" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-02.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-02.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_6" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-06.jpg">
+                <a class="gallery-group gallery_item_6 home__photo6" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-06.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-06.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_10" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-10.jpg">
+                <a class="gallery-group gallery_item_10 home__photo10" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-10.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-10.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_10" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-12.jpg">
+                <a class="gallery-group gallery_item_10 home__photo12" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-12.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-12.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
             </div>
             <!-- COLUMNA 3 -->
             <div class="column">
-                <a class="gallery-group gallery_item_3" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-03.jpg">
+                <a class="gallery-group gallery_item_3 home__photo3" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-03.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-03.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_7" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-07.jpg">
+                <a class="gallery-group gallery_item_7 home__photo7" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-07.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-07.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_7" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-13.jpg">
+                <a class="gallery-group gallery_item_7 home__photo13" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-13.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-13.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
             </div>
             <!-- COLUMNA 4 -->
             <div class="column">
-                <a class="gallery-group gallery_item_4" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-04.jpg">
+                <a class="gallery-group gallery_item_4 home__photo4" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-04.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-04.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_8" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-08.jpg">
+                <a class="gallery-group gallery_item_8 home__photo8" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-08.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-08.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_8" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-14.jpg">
+                <a class="gallery-group gallery_item_14 home__photo14" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-14.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-14.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
             </div>

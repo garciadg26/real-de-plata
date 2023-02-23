@@ -1,3 +1,6 @@
+<?php $title = "Reservar - Mesón Real De Plata"; ?>
+<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+
 <?php include_once "Public/include/head.php"; ?>
 
 </head>
@@ -10,12 +13,12 @@
 
     <!-- EVENTOS -->
     <section class="encabezado_hacienda text-center" id="encab_hacienda">
-        <h3 class="subtitulo">Contacto</h3>
-        <h2 class="tit_primero_red max-w900">Reserva tu visita <br> ¡Ahora!</h2>
+        <h3 class="subtitulo home__photo1">Contacto</h3>
+        <h2 class="tit_primero_red max-w900 home__photo3">Reserva tu visita <br> ¡Ahora!</h2>
     </section>
 
     <!-- FORMULARIO CONTACTO -->
-    <section id="formulario_contacto" class="form_contacto">
+    <section id="formulario_contacto" class="form_contacto home__photo5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3">

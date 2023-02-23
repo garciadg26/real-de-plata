@@ -15,7 +15,7 @@
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
 	    loop:true,
-	    autoplay: false,
+	    autoplay: true,
 	    margin:0,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
@@ -23,7 +23,7 @@
 	    dots: false,
 	    autoplayHoverPause: false,
 	    items: 1,
-	    navText : ["<span class='icon_back'></span>","<span class='icon_next'></span>"],
+	    navText : ["<span class='icon_back specs__data'></span>","<span class='icon_next specs__img'></span>"],
 	    responsive:{
 	      0:{
 	        items:1

@@ -1,4 +1,5 @@
-<?php $title = "Mesón Real de Plata - Grand hacienda"; ?>
+<?php $title = "Mesón Real De Plata - Grand Hacienda & Hotel Boutique"; ?>
+<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
 <?php include_once "Public/include/head.php"; ?>
 
@@ -8,7 +9,7 @@
     <!-- SLIDER PRINCIPAL -->
     <section>
         <div class="fila_tit_slider">
-            <h1 class="tit_slider">DETALLES QUE <br>
+            <h1 class="tit_slider home__photo1">DETALLES QUE <br>
                 CUENTAN HISTORIAS
             </h1>
         </div>
@@ -24,7 +25,7 @@
             <div class="">
                 <!-- RESERVACIONES -->
                 <div class="cont_reserv">
-                    <form id="banner_reserva" class="form_reserv_home" action="" method="post">
+                    <form id="banner_reserva" class="form_reserv_home home__photo4" action="" method="post">
                         <div class="row_reserv">
                             <div class="item_form_date">
                                 <!-- Grupo: Fecha de llegada -->                                
@@ -80,15 +81,15 @@
     <section id="histHome" class="historia_home">
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="cont_isotipo_real">
+                <div class="cont_isotipo_real home__photo1">
                     <img src="Public/images/svg/isotipo-real-de-plata.svg" alt="">
                 </div>
                 <div class="max-w">
                     <img src="" alt="">
-                    <h1 class="tit_segundo_bn"><span class="capitular">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h1>
-                    <p class="txt_general_bn">Un lugar lleno de historia donde vives la naturaleza con lujo
+                    <h1 class="tit_segundo_bn home__photo3"><span class="capitular">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h1>
+                    <p class="txt_general_bn home__photo5">Un lugar lleno de historia donde vives la naturaleza con lujo
                         y la exclusividad de una hacienda tradicional.</p>
-                        <div class="cont_btn">
+                        <div class="cont_btn home__photo7">
                             <a href="hacienda.php" class="btn_general btn_principal_bn">CONÓCENOS</a>
                         </div>
                 </div>
@@ -96,46 +97,46 @@
         </div>
         <div class="row contain_banner">
             <div class="image_banner img_banner_lg">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-exterior.jpg" alt="Hotel real de plata exterior">
+                <img class="img-fluid home__photo1" src="Public/images/hotel-real-de-plata-exterior.jpg" alt="Hotel real de plata exterior">
             </div>
             <div class="image_banner img_banner_sm">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-piscina.jpg" alt="Hotel real de plata piscina"> 
+                <img class="img-fluid home__photo2" src="Public/images/hotel-real-de-plata-piscina.jpg" alt="Hotel real de plata piscina"> 
             </div>
             <div class="image_banner img_banner_lg">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-entrada.jpg" alt="Hotel real de plata entrada"> 
+                <img class="img-fluid home__photo3" src="Public/images/hotel-real-de-plata-entrada.jpg" alt="Hotel real de plata entrada"> 
             </div>
             <div class="image_banner img_banner_sm">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-interior-pasillo.jpg" alt="Hotel real de plata interior sala">
+                <img class="img-fluid home__photo4" src="Public/images/hotel-real-de-plata-interior-pasillo.jpg" alt="Hotel real de plata interior sala">
             </div>
             <div class="image_banner img_banner_lg">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-interior-sala.jpg" alt="Hotel real de plata interior sala">
+                <img class="img-fluid home__photo5" src="Public/images/hotel-real-de-plata-interior-sala.jpg" alt="Hotel real de plata interior sala">
             </div>
             <div class="image_banner img_banner_sm">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-patio-exterior.jpg" alt="Hotel real de plata patio exterior">
+                <img class="img-fluid home__photo6" src="Public/images/hotel-real-de-plata-patio-exterior.jpg" alt="Hotel real de plata patio exterior">
             </div>
         </div>
     </section>
     <!-- HABITACIONES -->
     <section id="habitaciones" class="habitaHome">
         <div class="cont_tit_habitaciones">
-            <h2 class="tit_primero"><span class="capitular_red">H</span>ABITACIONES</h2>
-            <p class="txt_general max-w400">Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano.</p>
+            <h2 class="tit_primero home__photo2"><span class="capitular_red">H</span>ABITACIONES</h2>
+            <p class="txt_general max-w400 home__photo3">Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano.</p>
         </div>
-        <article class="suite_master suite_05">
+        <article class="suite_master suite_05 home__photo1">
             <div class="cont_txt_overlay">
                 <p class="suite_number">05</p>
                 <h6 class="tit_suite">Junior Suite</h6>
                 <a class="btn_comun btn_suite" href="master-suite.php">Ver más</a>
             </div>
         </article>
-        <article class="suite_master suite_02">
+        <article class="suite_master suite_02 home__photo2">
             <div class="cont_txt_overlay">
                 <p class="suite_number">02</p>
                 <h6 class="tit_suite">Master Suite</h6>
                 <a class="btn_comun btn_suite" href="master-suite.php">Ver más</a>
             </div>
         </article>
-        <article class="suite_master suite_03">
+        <article class="suite_master suite_03 home__photo3">
             <div class="cont_txt_overlay">
                 <p class="suite_number">03</p>
                 <h6 class="tit_suite">Superior Suite</h6>
@@ -143,9 +144,9 @@
             </div>
         </article>
         <div class="notas_habitaciones">
-            <p class="txt_nota_h">*Es necesaria previa reservación</p>
-            <p class="txt_nota_h">**Instalaciones solo adultos</p>
-            <p class="txt_nota_h">***No aceptamos mascotas</p>
+            <p class="txt_nota_h home__photo1">*Es necesaria previa reservación</p>
+            <p class="txt_nota_h home__photo2">**Instalaciones solo adultos</p>
+            <p class="txt_nota_h home__photo3">***No aceptamos mascotas</p>
         </div>
     </section>
 
@@ -155,18 +156,18 @@
             <!-- LEFT -->
             <div class="cont_txt_eventos">
                 <div class="cont_txt_l">
-                    <h1 class="tit_primero"><span class="capitular_red">E</span>ventos</h1>
-                    <h3 class="tit_primero_red">Próximamente</h3>
-                    <p class="txt_general max-w0"><span class="color_red"><b>Ofrecemos la exclusividad del lugar</b></span> con el único propósito de cuidar cada detalle de esta historia en la que ustedes son los protagonistas.</p>
-                    <p class="txt_general max-w0">El lugar ideal para que vivas el evento de tus sueños. Fiestas de compromiso, pedidas de mano, despedidas de soltera(o), encuentros familiares y muchos más.</p>
-                    <div class="cont_btn">
+                    <h1 class="tit_primero home__left1"><span class="capitular_red specs__data">E</span>ventos</h1>
+                    <h3 class="tit_primero_red home__left2">Próximamente</h3>
+                    <p class="txt_general max-w0 home__left3"><span class="color_red"><b>Ofrecemos la exclusividad del lugar</b></span> con el único propósito de cuidar cada detalle de esta historia en la que ustedes son los protagonistas.</p>
+                    <p class="txt_general max-w0 home__left4">El lugar ideal para que vivas el evento de tus sueños. Fiestas de compromiso, pedidas de mano, despedidas de soltera(o), encuentros familiares y muchos más.</p>
+                    <div class="cont_btn home__left5">
                         <a class="btn_comun btn_secundario" href="eventos.php">Más información</a>
                     </div>
                 </div>
             </div>
             <!-- RIGHT -->
             <div class="cont_img_eventos">
-                <img class="img-fluid" src="Public/images/hotel-real-de-plata-entrada.jpg" alt="">
+                <img class="img-fluid home__photo6" src="Public/images/hotel-real-de-plata-entrada.jpg" alt="">
             </div>
         </div>
     </section>
@@ -174,9 +175,9 @@
     <!-- UBICACIÓN -->
     <section id="ubicaHome" class="ubicacionHome">
         <div class="content_ubica">
-            <h1 class="tit_primero"><span class="capitular_red">U</span>BICACIÓN</h1>
-            <div class="pleca_txt"></div>
-            <p class="txt_general max-w03">Camino Real a Chichimequillas No. 1. <br>
+            <h1 class="tit_primero home__photo2"><span class="capitular_red">U</span>BICACIÓN</h1>
+            <div class="pleca_txt home__photo4"></div>
+            <p class="txt_general max-w03 home__photo6">Camino Real a Chichimequillas No. 1. <br>
                 Col. Chichimequillas, El Marqués, Qro. <br>
                 C.P. 76250</p>
         </div>
@@ -188,7 +189,7 @@
     <?php include_once "Public/include/footer.php"; ?>
 
     <script type="text/javascript" src="Public/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="Public/js/slider.js"></script>
+    <script type="text/javascript" src="Public/js/slider.js?ver=1.1.10"></script>
     
     <script type="text/javascript" src="Public/js/banner_reserva.js?ver=1.1.15"></script>
 </body>

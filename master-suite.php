@@ -1,5 +1,5 @@
-<?php $title = "Master Suite - Mesón Real de Plata"; ?>
-
+<?php $title = "Master Suite - Mesón Real De Plata"; ?>
+<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 <?php include_once "Public/include/head.php"; ?>
 
     <link rel="stylesheet" href="Public/css/jquery.fancybox-1.3.4.css?ver=1.1.1">
@@ -12,8 +12,8 @@
 
     <!-- HACIENDA -->
     <section class="encabezado_hacienda text-center" id="encab_hacienda">
-        <h3 class="subtitulo">Hacienda</h3>
-        <h2 class="tit_primero_red max-w900">Cada rincón está pensado para regalarte el mejor de los recuerdos</h2>
+        <h3 class="subtitulo home__photo1">Hacienda</h3>
+        <h2 class="tit_primero_red max-w900 home__photo3">Cada rincón está pensado para regalarte el mejor de los recuerdos</h2>
     </section>
 
     <!-- HABITACIONES DETALLE -->
@@ -27,12 +27,12 @@
                     <div class="row">
                         <!-- MENU GENERAL -->
                         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                            <div class="cont_gellery_suite">
+                            <div class="cont_gellery_suite home__photo1">
                                 <img class="img-fluid item_gallery" src="./Public/images/master-suite-real-de-plata.jpg" alt="Hotel mesón real de plata">
                                 <img class="img-fluid item_gallery" src="./Public/images/master-suite-real-de-plata2.jpg" alt="Hotel mesón real de plata">
                                 <img class="img-fluid item_gallery" src="Public/images/master-suite-real-de-plata3.jpg" alt="Hotel mesón real de plata">
                             </div>
-                            <div class="cont_btn_gallery">
+                            <div class="cont_btn_gallery home__photo11">
                                 <a rel="example_group" class="btn_comun btn_principal_bn gallery-group" href="./Public/images/master-suite-real-de-plata.jpg">Ver más fotos</a>
                                 <a class="gallery-group" href="./Public/images/master-suite-real-de-plata2.jpg" rel="example_group"></a>
                                 <a class="gallery-group" href="./Public/images/master-suite-real-de-plata3.jpg" rel="example_group"></a>
@@ -40,25 +40,25 @@
                         </div>
                         <!-- DETALLE CONTENIDO -->
                         <div class="col-xl-5 col-lg5 col-md-5 col-sm-12">
-                            <h1 class="tit_primero">Master Suite</h1>
+                            <h1 class="tit_primero home__right1">Master Suite</h1>
                             <ul class="list_detalle_h">
-                                <li class="item_detalle">1 king size para 2 adultos</li>
-                                <li class="item_detalle">Caja fuerte</li>
-                                <li class="item_detalle">Calefactores</li>
-                                <li class="item_detalle">TV satelital (sky)</li>
-                                <li class="item_detalle">Sala</li>
+                                <li class="item_detalle home__right3">1 king size para 2 adultos</li>
+                                <li class="item_detalle home__right4">Caja fuerte</li>
+                                <li class="item_detalle home__right5">Calefactores</li>
+                                <li class="item_detalle home__right6">TV satelital (sky)</li>
+                                <li class="item_detalle home__right7">Sala</li>
                             </ul>
-                            <div class="cont_btn_detalle">
+                            <div class="cont_btn_detalle home__right8">
                                 <a class="btn_comun btn_secundario" href="reservar.php">
                                     <img src="Public/images/svg/icon_reserva_before.svg" alt="">
                                     Reservar</a>
                                 <a class="btn_comun btn_principal" href="contacto.php">Contáctanos</a>
                             </div>
-                            <p class="txt_general">Todas nuestras habitaciones cuentan con 1 cama king size y su ocupación es de 2 adultos.</p>
+                            <p class="txt_general home__right9">Todas nuestras habitaciones cuentan con 1 cama king size y su ocupación es de 2 adultos.</p>
                             <!-- <p class="txt_general">Cancelación realizada durante las 72 horas de la fecha de llegada, NO se reembolsa el anticipo.</p>
                             <p class="txt_general">Cancelación realizada durante las 120 horas antes de la fecha de llegada, se reembolsa el 50% del anticipo.</p>
                             <p class="txt_general">Cancelación realizada durante las 144 horas antes de la fecha de llegada, se reembolsa el 100% del anticipo.</p> -->
-                            <p class="txt_general">*Es necesaria previa reservación <br>
+                            <p class="txt_general home__right10">*Es necesaria previa reservación <br>
                                                     **Instalaciones solo adultos <br>
                                                     ***No aceptamos mascotas
                             </p>
