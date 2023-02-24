@@ -1,7 +1,9 @@
 <?php $title = "Contacto - Mesón Real De Plata"; ?>
-<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
 <?php include_once "Public/include/head.php"; ?>
+    <!-- Google Captcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 <body>
@@ -42,7 +44,7 @@
                 <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                     <h1 class="tit_primero home__photo1">Contáctanos</h1>
                     <!-- FORMULARIO -->
-                    <form id="formulario" class="form_contacto" method="post" action="">
+                    <form id="formulario" class="form_contacto home__photo3" method="post" action="">
                         <div class="row form_row1">
                             <div class="col-md-12">
                                 <!-- Grupo: Nombre -->
@@ -90,6 +92,7 @@
                                 <div class="formulario__captcha" id="formulario__mensaje-captcha">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Captcha no verificado. </p>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LdFFaskAAAAADQBp94fda9eUj7O-00Tnv_pavu4"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>Formulario:</b> Enviado exitosamente!</p>
                             </div>

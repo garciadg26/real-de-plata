@@ -1,8 +1,9 @@
-<?php $title = "Reservar - Mesón Real De Plata"; ?>
-<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+    <?php $title = "Reservar - Mesón Real De Plata"; ?>
+    <?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
-<?php include_once "Public/include/head.php"; ?>
-
+    <?php include_once "Public/include/head.php"; ?>
+    <!-- Google Captcha v3 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <?php include_once "Public/include/nav.php"; ?>
@@ -12,7 +13,7 @@
 
 
     <!-- EVENTOS -->
-    <section class="encabezado_hacienda text-center" id="encab_hacienda">
+    <section class="encabezado_reserva text-center" id="encab_reserva">
         <h3 class="subtitulo home__photo1">Contacto</h3>
         <h2 class="tit_primero_red max-w900 home__photo3">Reserva tu visita <br> ¡Ahora!</h2>
     </section>
@@ -21,7 +22,7 @@
     <section id="formulario_contacto" class="form_contacto home__photo5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
                     <!-- FORMULARIO -->
                     <form id="reservar" class="form_contacto" method="post" action="Public/php/">
                         <div class="row form_row2">
@@ -105,6 +106,7 @@
                                 <div class="formulario__captcha" id="formulario__mensaje-captcha">
                                     <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Captcha no verificado. </p>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LdFFaskAAAAADQBp94fda9eUj7O-00Tnv_pavu4"></div>
                                 <input type="submit" value="Enviar">
                                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>Formulario:</b> Enviado exitosamente!</p>
                             </div>

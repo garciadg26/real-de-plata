@@ -1,5 +1,5 @@
 <?php $title = "Eventos - Mesón Real De Plata"; ?>
-<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
     <?php include_once "Public/include/head.php" ?>
 
@@ -25,17 +25,17 @@
     <section id="descript_encabezado" class="txt_encabezado">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6 offset-md-0">
-                    <p class="txt_destacado home__left1">Ofrecemos un lugar exclusivo, cuidando cada detalle para que tú seas el protagonista de tu historia.
+                <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-6 offset-md-0 home__photo1">
+                    <p class="txt_destacado">Ofrecemos un lugar exclusivo, cuidando cada detalle para que tú seas el protagonista de tu historia.
                     </p>
                 </div>
-                <div class="col-xl-4 col-lg-5 col-md-6">
-                    <p class="txt_general home__right1">El lugar ideal para que vivas el evento de tus sueños.</p>
-                    <p class="txt_general home__right1">Fiestas de compromiso, pedidas de mano, despedidas de soltera(o), encuentros familiares y muchos más.</p>
+                <div class="col-xl-4 col-lg-5 col-md-6 home__photo2">
+                    <p class="txt_general">El lugar ideal para que vivas el evento de tus sueños.</p>
+                    <p class="txt_general">Fiestas de compromiso, pedidas de mano, despedidas de soltera(o), encuentros familiares y muchos más.</p>
                 </div>
             </div>
             <div class="row fila_btn_txt_descrip">
-                <div class="col-md-12 text-center home__photo1">
+                <div class="col-md-12 text-center">
                     <a class="btn_comun btn_secundario" href="contacto.php">Contáctanos</a>
                 </div>
             </div>
@@ -48,7 +48,7 @@
             <div class="cont_gale_eventos">
                 <div class="row primera_fila_img_eventos">
                     <div class="col-md-7">
-                        <a class="item_gale_eventos gallery-group home__photo1" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-eventos1.jpg">
+                        <a class="item_gale_eventos gallery-group" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-eventos1.jpg">
                             <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-eventos1.jpg" alt="">
                         </a>
                     </div>
@@ -60,12 +60,12 @@
                 </div>
                 <div class="row segunda_fila_img_eventos">
                     <div class="col-md-5">
-                        <a class="item_gale_eventos gallery-group img_top20 home__photo1" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-eventos3.jpg">
+                        <a class="item_gale_eventos gallery-group img_top20" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-eventos3.jpg">
                             <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-eventos3.jpg" alt="">
                         </a>
                     </div>
                     <div class="col-md-7">
-                        <a class="item_gale_eventos gallery-group home__photo3" rel="example_group" href="Public/images/hotel-meson-real-de-plata-eventos4.jpg">
+                        <a class="item_gale_eventos gallery-group" rel="example_group" href="Public/images/hotel-meson-real-de-plata-eventos4.jpg">
                             <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-eventos4.jpg" alt="">
                         </a>
                     </div>

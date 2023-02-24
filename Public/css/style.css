@@ -45,8 +45,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .tit_segundo_bn .capitular{
     position: absolute;
-    top: 2px;
-    left: -10px;
+    top: -22px;
+    left: -12px;
     font-family: var(--font-nautica);
     font-size: 2rem;
 }
@@ -117,14 +117,14 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    
+    width: 100vw;
     overflow-x: hidden;
 }
 
 /* __MENÚ PRINCIPAL__ */
 #menu_dark{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     padding: 12px 10%;
     z-index: 9;
 }
@@ -1214,6 +1214,12 @@ input::-webkit-datetime-edit-fields-wrapper {
     font-size: 16px;
     opacity: 0;
 }
+#banner_reserva .formulario__validacion-estado {
+    position: absolute;
+    right: unset;
+    top: 18px;
+    margin-left: 120px;
+}
 .formulario__mensaje, .formulario__captcha{
 	height: 45px;
 	line-height: 45px;
@@ -1358,12 +1364,15 @@ input::-webkit-datetime-edit-fields-wrapper {
     .item_form{
         width: 40%;
     }
+    #formulario_contacto .item_form_date {
+        width: 100%;
+    }
     .icon_after::before {
         left: -130px;
         top: -60px;
     }
     #fechaLlegada[type="text"], #fechaSalida[type="text"] {
-        padding-left: 0px;
+        padding-left: 16px;
     }
     .contain_banner > div:nth-child(2){
         display: none;
@@ -1507,6 +1516,9 @@ input::-webkit-datetime-edit-fields-wrapper {
     }
     #menu_dark .sub-item{
         display: none;
+    }
+    #menu_dark .navbar-nav .dropdown-menu{
+        background-color: transparent;
     }
     #menu_dark .dropdown{
         display: block;
@@ -1711,8 +1723,8 @@ input::-webkit-datetime-edit-fields-wrapper {
         margin-right: 16px;
     }
     .tit_segundo_bn .capitular {
-        top: 0px;
-        left: 16px;
+        top: -22%;
+        left: 6%;
     }
     #histHome{
         padding: 60px 0px 0px 0px;
@@ -1767,5 +1779,33 @@ input::-webkit-datetime-edit-fields-wrapper {
     }
     #encab_hacienda{
         margin-bottom: 60px;
+    }
+    .legales{
+        flex-direction: column;
+        text-align: center;
+    }
+    .legales a{
+        margin-bottom: 8px;
+    }
+}
+    /* MAX 414px */
+@media screen and (max-width: 414px) {
+    .tit_segundo_bn .capitular {
+        top: -22%;
+        left: 7.3%;
+    }
+}
+    /* MAX 390px */
+@media screen and (max-width: 390px) {
+    .tit_segundo_bn .capitular {
+        top: -20%;
+        left: 5%;
+    }
+}
+    /* MAX 375px */
+@media screen and (max-width: 375px) {
+    .tit_segundo_bn .capitular {
+        top: -22%;
+        left: 4%;
     }
 }

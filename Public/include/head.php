@@ -15,7 +15,7 @@
     <link rel="alternate" hreflang="es" href="http://mesonrealdeplata.com/" />
     <meta name="author" content="tipos libres" />
     <meta property="og:title" content="<?php echo $title; ?>" />
-    <meta property="og:image" content="https://tiposlibres.com/test/real-de-plata/Public/images/Mezon-real-de-plata-hotel-boutique.jpg" />
+    <meta property="og:image" content="https://mesonrealdeplata.com/Public/images/Meson-real-de-plata-hotel-boutique.jpg" />
     <meta property="og:url" content="http://mesonrealdeplata.com/">
     <meta property="og:type" content="article">
     <meta property="og:description" content="<?php echo $description; ?>">
@@ -34,7 +34,7 @@
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.26">
+    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.31">
 
     <!-- SLIDER -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">

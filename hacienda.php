@@ -1,5 +1,5 @@
 <?php $title = "Hacienda - Mesón Real De Plata"; ?>
-<?php $descripcion = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
 <?php include_once "Public/include/head.php"; ?>
 
@@ -23,9 +23,9 @@
     <!-- PATRIMONIO HUMANIDAD -->
     <section class="subtit_hacienda" id="subtit_hacienda">
         <div class="cont_tit_hacienda">
-            <h2 class="tit_primero home__left1"><span class="capitular_red">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h2>
+            <h2 class="tit_primero home__photo1"><span class="capitular_red">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h2>
         </div>
-        <div class="cont_txt_hacienda home__right2">
+        <div class="cont_txt_hacienda home__photo2">
             <p class="txt_general">Un lugar lleno de historia donde vives la naturaleza con el lujo y la belleza de una hacienda tradicional.</p>
             <p class="txt_general">Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano.</p>
             <p class="txt_general">Sala de masajes* / Gimnasio / Cantina / Bicicletas/  Jacuzzi exterior / Clases de yoga / Traslado desde y hacia el aeropuerto / Campo de práctica para golf.</p>
