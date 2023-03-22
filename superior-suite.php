@@ -1,8 +1,7 @@
-<?php $title = "Superior Suite - Mesón Real De Plata"; ?>
-<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+    <?php $title = "Superior Suite - Mesón Real De Plata"; ?>
+    <?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
-<?php include_once "Public/include/head.php"; ?>
-
+    <?php include_once "Public/include/head.php"; ?>
     <link rel="stylesheet" href="Public/css/jquery.fancybox-1.3.4.css?ver=1.1.1">
 </head>
 <body>
@@ -29,14 +28,21 @@
                         <!-- MENU GENERAL -->
                         <div class="col-md-7">
                             <div class="cont_gellery_suite home__photo1">
-                                <img class="img-fluid item_gallery" src="./Public/images/hotel-meson-real-de-plata-master-suite1.jpg" alt="Hotel mesón real de plata">
-                                <img class="img-fluid item_gallery" src="./Public/images/hotel-meson-real-de-plata-master-suite2.jpg" alt="Hotel mesón real de plata">
-                                <img class="img-fluid item_gallery" src="Public/images/hotel-meson-real-de-plata-master-suite3.jpg" alt="Hotel mesón real de plata">
+                                <img class="img-fluid item_gallery" src="./Public/images/superior-suite-real-de-plata.jpg" alt="Mesón Real de Plata habitación Superior Suite">
+                                <img class="img-fluid item_gallery" src="./Public/images/superior-suite-real-de-plata2.jpg" alt="Mesón Real de Plata habitación Superior Suite">
+                                <img class="img-fluid item_gallery" src="Public/images/superior-suite-real-de-plata3.jpg" alt="Mesón Real de Plata habitación Superior Suite">
                             </div>
                             <div class="cont_btn_gallery home__photo10">
-                                <a rel="example_group" class="btn_comun btn_principal_bn gallery-group" href="./Public/images/hotel-meson-real-de-plata-master-suite1-lg.jpg">Ver más fotos</a>
-                                <a class="gallery-group" href="./Public/images/hotel-meson-real-de-plata-master-suite2-lg.jpg" rel="example_group"></a>
-                                <a class="gallery-group" href="./Public/images/hotel-meson-real-de-plata-master-suite3-lg.jpg" rel="example_group"></a>
+                                <a rel="example_group" class="btn_comun btn_principal_bn gallery-group" href="./Public/images/meson-real-de-superior-suite03.jpg">Ver más fotos</a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite04.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite01.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite07.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite08.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite09.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite10.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite05.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite06.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-superior-suite02.jpg" rel="example_group"></a>
                             </div>
                         </div>
                         <!-- DETALLE CONTENIDO -->

@@ -29,14 +29,24 @@
                         <!-- MENU GENERAL -->
                         <div class="col-md-7">
                             <div class="cont_gellery_suite home__photo1">
-                                <img class="img-fluid item_gallery" src="./Public/images/Junior-suite-real-de-plata.jpg" alt="Hotel mesón real de plata">
-                                <img class="img-fluid item_gallery" src="./Public/images/Junior-suite-real-de-plata2.jpg" alt="Hotel mesón real de plata">
-                                <img class="img-fluid item_gallery" src="Public/images/Junior-suite-real-de-plata3.jpg" alt="Hotel mesón real de plata">
+                                <img class="img-fluid item_gallery" src="./Public/images/Junior-suite-meson-real-de-plata.jpg" alt="Hotel mesón real de plata junior suite habitación">
+                                <img class="img-fluid item_gallery" src="./Public/images/Junior-suite-meson-real-de-plata2.jpg" alt="Hotel mesón real de plata junior suite decoración">
+                                <img class="img-fluid item_gallery" src="Public/images/Junior-suite-meson-real-de-plata3.jpg" alt="Hotel mesón real de plata junior suite baño">
                             </div>
                             <div class="cont_btn_gallery home__photo10">
-                                <a rel="example_group" class="btn_comun btn_principal_bn gallery-group" href="./Public/images/Junior-suite-real-de-plata.jpg">Ver más fotos</a>
-                                <a class="gallery-group" href="./Public/images/Junior-suite-real-de-plata2.jpg" rel="example_group"></a>
-                                <a class="gallery-group" href="./Public/images/Junior-suite-real-de-plata3.jpg" rel="example_group"></a>
+                                <a rel="example_group"  class="btn_comun btn_principal_bn gallery-group" href="./Public/images/meson-real-de-plata-junio-suite08.jpg">Ver más fotos</a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite18.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite19.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite15.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite04.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite17.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite16.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite20.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite07.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite01.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite11.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite05.jpg" rel="example_group"></a>
+                                <a class="gallery-group"  href="./Public/images/meson-real-de-plata-junio-suite13.jpg" rel="example_group"></a>
                             </div>
                         </div>
                         <!-- DETALLE CONTENIDO -->

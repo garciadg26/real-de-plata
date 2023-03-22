@@ -28,14 +28,21 @@
                         <!-- MENU GENERAL -->
                         <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                             <div class="cont_gellery_suite home__photo1">
-                                <img class="img-fluid item_gallery" src="./Public/images/master-suite-real-de-plata.jpg" alt="Hotel mesón real de plata">
-                                <img class="img-fluid item_gallery" src="./Public/images/master-suite-real-de-plata2.jpg" alt="Hotel mesón real de plata">
-                                <img class="img-fluid item_gallery" src="Public/images/master-suite-real-de-plata3.jpg" alt="Hotel mesón real de plata">
+                                <img class="img-fluid item_gallery" src="./Public/images/master-suite-meson-real-de-plata.jpg" alt="Mesón Real de Plata Master Suite habitación">
+                                <img class="img-fluid item_gallery" src="./Public/images/master-suite-meson-real-de-plata2.jpg" alt="Mesón Real de Plata Master Suite habitación">
+                                <img class="img-fluid item_gallery" src="Public/images/master-suite-meson-real-de-plata3.jpg" alt="Mesón Real de Plata Master Suite habitación">
                             </div>
                             <div class="cont_btn_gallery home__photo11">
-                                <a rel="example_group" class="btn_comun btn_principal_bn gallery-group" href="./Public/images/master-suite-real-de-plata.jpg">Ver más fotos</a>
-                                <a class="gallery-group" href="./Public/images/master-suite-real-de-plata2.jpg" rel="example_group"></a>
-                                <a class="gallery-group" href="./Public/images/master-suite-real-de-plata3.jpg" rel="example_group"></a>
+                                <a rel="example_group" class="btn_comun btn_principal_bn gallery-group" href="./Public/images/meson-real-de-master-suite03.jpg">Ver más fotos</a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite01.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite06.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite08.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite07.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite05.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite09.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite04.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite02.jpg" rel="example_group"></a>
+                                <a class="gallery-group" href="./Public/images/meson-real-de-master-suite10.jpg" rel="example_group"></a>
                             </div>
                         </div>
                         <!-- DETALLE CONTENIDO -->

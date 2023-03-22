@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
+    <?php 
+        $url_actual = $_SERVER['REQUEST_URI']; 
+    ?>
+    
     <?php include_once "analitycs.php"; ?>
+    <?php include_once "../config/config.php"; ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,12 +39,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/txt2hjs.css">
 
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Public/css/style.css?ver=1.1.31">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/style.css?ver=1.1.40">
 
     <!-- SLIDER -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="Public/css/slide.css?ver=1.1.12">
+    <link rel="stylesheet" href="Public/css/slide.css?ver=1.1.17">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="Public/css/ionicons.min.css">

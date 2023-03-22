@@ -45,8 +45,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .tit_segundo_bn .capitular{
     position: absolute;
-    top: -22px;
-    left: -12px;
+    top: 0px;
+    left: -14px;
     font-family: var(--font-nautica);
     font-size: 2rem;
 }
@@ -137,6 +137,17 @@ body{
 .item_contact{
     display: inline-block;
 }
+.item_idioma{
+    box-sizing: border-box;
+    padding: 0px 8px;
+}
+.item_idioma img{
+    width: 22px;
+}
+.item_idioma > *{
+    display: inline-block;
+    margin: 0px 6px;
+}
 .list_mail, .list_telefono{
     margin-bottom: 0;
 }
@@ -144,7 +155,7 @@ body{
     width: 20px;
     margin-right: 8px;
 }
-.item_contact svg .icon_mail, .item_contact svg .icon_tel{
+.item_contact svg .icon_mail, .item_contact svg .icon_tel, .item_idioma svg path{
     fill: var(--color-white);
 }
 .menu_social_top li{
@@ -195,6 +206,9 @@ body{
     font-size: 2rem;
 }
 #menu_dark .dropdown{
+    display: none;
+}
+.item_movil{
     display: none;
 }
 
@@ -322,7 +336,7 @@ body{
     position: absolute;
     content: "";
     top: 26px;
-    width: 40%;
+    width: 36%;
     height: 1px;
     background: var(--color-white);
 }
@@ -368,6 +382,24 @@ ul.navbar-nav li a, ul.navbar-nav li{
 }
 .slider-item02{
     background-image: url("../images/slider2-hotel-meson-real-de-plata.jpg");
+}
+.slider-item03{
+    background-image: url("../images/slider3-hotel-meson-real-de-plata.jpg");
+}
+.slider-item04{
+    background-image: url("../images/slider4-hotel-meson-real-de-plata.jpg");
+}
+.slider-item05{
+    background-image: url("../images/slider5-hotel-meson-real-de-plata.jpg");
+}
+.slider-item06{
+    background-image: url("../images/slider6-hotel-meson-real-de-plata.jpg");
+}
+.slider-item07{
+    background-image: url("../images/slider7-hotel-meson-real-de-plata.jpg");
+}
+.slider-item08{
+    background-image: url("../images/slider8-hotel-meson-real-de-plata.jpg");
 }
 .slider_detalle{
     position: absolute;
@@ -546,7 +578,7 @@ input::-webkit-datetime-edit-fields-wrapper {
 .max-w{
     position: relative;
     margin-left: calc(50% - 210px);
-    width: 420px;
+    width: 416px;
 }
 .cont_isotipo_real{
     margin-bottom: 60px;
@@ -892,6 +924,9 @@ input::-webkit-datetime-edit-fields-wrapper {
 }
 .encabezado_hacienda{
     padding: 40px 40px 100px 40px;
+}
+.encabezado_privacidad{
+    padding: 60px 40px 40px 40px;
 }
 .max-w900{
     position: relative;
@@ -1418,6 +1453,18 @@ input::-webkit-datetime-edit-fields-wrapper {
         padding: 8px 12px!important;
     }
     .menu_social_top{
+        display: block;
+        position: absolute;
+        right: 76px;
+        top: 48px;
+        width: 100px;
+        z-index: 9;
+        transition: all 0.2s;
+    }
+    .scroll-header .menu_social_top{
+        top: 34px;
+    }
+    .list_mail{
         display: none;
     }
         /* BARRA RESERVA */
@@ -1644,11 +1691,42 @@ input::-webkit-datetime-edit-fields-wrapper {
     .img_center img{
         margin-top: 20px;
     }
+    /* __SLIDER PRINCIPAL__ */
+    .slider-item01{
+        background-image: url("../images/slider1-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item02{
+        background-image: url("../images/slider2-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item03{
+        background-image: url("../images/slider3-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item04{
+        background-image: url("../images/slider4-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item05{
+        background-image: url("../images/slider5-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item06{
+        background-image: url("../images/slider6-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item07{
+        background-image: url("../images/slider7-hotel-meson-real-de-plata--ch.jpg");
+    }
+    .slider-item08{
+        background-image: url("../images/slider8-hotel-meson-real-de-plata--ch.jpg");
+    }
 }
 
   
     /* MAX 580px */
 @media screen and (max-width: 580px) {
+    .item_movil{
+        display: block;
+    }    
+    .tel_top{
+        display: none;
+    }
     .column {
         -ms-flex: 100%;
         flex: 100%;
@@ -1723,7 +1801,7 @@ input::-webkit-datetime-edit-fields-wrapper {
         margin-right: 16px;
     }
     .tit_segundo_bn .capitular {
-        top: -22%;
+        top: 0%;
         left: 6%;
     }
     #histHome{
@@ -1787,12 +1865,18 @@ input::-webkit-datetime-edit-fields-wrapper {
     .legales a{
         margin-bottom: 8px;
     }
+    .encabezado_privacidad{
+        padding: 0;
+    }
+    #fancybox-left-ico, #fancybox-right-ico {
+        left: 50px!important;
+    }
 }
     /* MAX 414px */
 @media screen and (max-width: 414px) {
     .tit_segundo_bn .capitular {
-        top: -22%;
-        left: 7.3%;
+        top: 0%;
+        left: 6.3%;
     }
 }
     /* MAX 390px */
@@ -1805,7 +1889,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     /* MAX 375px */
 @media screen and (max-width: 375px) {
     .tit_segundo_bn .capitular {
-        top: -22%;
+        top: 0%;
         left: 4%;
     }
 }

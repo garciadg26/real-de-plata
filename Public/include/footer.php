@@ -3,28 +3,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 cont_isotipo_foot">
-                    <img class="img-fluid" src="Public/images/svg/isotipo-real-de-plata.svg" alt="">
+                    <img class="img-fluid" src="<?php echo constant('URL') ?>Public/images/svg/isotipo-real-de-plata.svg" alt="">
                 </div>
                 <div class="col-md-5">
                     <ul class="list_foot">
-                        <a href="index.php" class="link_menu_foot">
-                            <li>Inicio</li>
-                        </a>
-                        <a href="hacienda.php" class="link_menu_foot">
-                            <li>Hacienda</li>
-                        </a>
-                        <a href="master-suite.php" class="link_menu_foot">
-                            <li>Habitaciones</li>
-                        </a>
-                        <a href="eventos.php" class="link_menu_foot">
-                            <li>Eventos</li>
-                        </a>
-                        <a href="contacto.php" class="link_menu_foot">
-                            <li>Contacto</li>
-                        </a>
-                        <a href="#" class="link_menu_foot">
-                            <li>Reservar</li>
-                        </a>
+                        <?php 
+                            if(stristr($url_actual, 'en/') === FALSE){
+                                echo '<a href="index.php" class="link_menu_foot">';
+                                    echo '<li>Inicio</li>';
+                                echo '</a>';
+                                echo '<a href="hacienda.php" class="link_menu_foot">';
+                                    echo '<li>Hacienda</li>';
+                                echo '</a>';
+                                echo '<a href="master-suite.php" class="link_menu_foot">';
+                                    echo '<li>Habitaciones</li>';
+                                echo '</a>';
+                                echo '<a href="eventos.php" class="link_menu_foot">';
+                                    echo '<li>Eventos</li>';
+                                echo '</a>';
+                                echo '<a href="contacto.php" class="link_menu_foot">';
+                                    echo '<li>Contacto</li>';
+                                echo '</a>';
+                                echo '<a href="reservar.php" class="link_menu_foot">';
+                                    echo '<li>Reservar</li>';
+                                echo '</a>';
+                            }else{
+                                echo '<a href="index.php" class="link_menu_foot">';
+                                    echo '<li>Home</li>';
+                                echo '</a>';
+                                echo '<a href="hacienda.php" class="link_menu_foot">';
+                                    echo '<li>Hacienda</li>';
+                                echo '</a>';
+                                echo '<a href="master-suite.php" class="link_menu_foot">';
+                                    echo '<li>Rooms</li>';
+                                echo '</a>';
+                                echo '<a href="contact.php" class="link_menu_foot">';
+                                    echo '<li>Contact</li>';
+                                echo '</a>';
+                                echo '<a href="events.php" class="link_menu_foot">';
+                                    echo '<li>Events</li>';
+                                echo '</a>';
+                                echo '<a href="book.php" class="link_menu_foot">';
+                                    echo '<li>Book Now</li>';
+                                echo '</a>';
+                            }
+                        ?>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -49,7 +72,7 @@
                 </div>
                 <div class="col-md-2">
                     <ul class="list_social">
-                        <a href="https://www.tripadvisor.com.mx/Hotel_Review-g479232-d15193365-Reviews-Meson_Real_De_Plata-Queretaro_City_Central_Mexico_and_Gulf_Coast.html" class="link_social_foot">
+                        <a target="_blank" href="https://www.tripadvisor.com.mx/Hotel_Review-g479232-d15193365-Reviews-Meson_Real_De_Plata-Queretaro_City_Central_Mexico_and_Gulf_Coast.html" class="link_social_foot">
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.087 11.752">
                                     <g transform="translate(211.982 -267.5)">
@@ -59,7 +82,7 @@
                                 </svg>
                             </li>
                         </a>
-                        <a href="https://instagram.com/mesonrealdeplata?igshid=YmMyMTA2M2Y=" class="link_social_foot">
+                        <a target="_blank" href="https://instagram.com/mesonrealdeplata?igshid=YmMyMTA2M2Y=" class="link_social_foot">
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.985 11">
                                     <g transform="translate(188.5 -267.234)">
@@ -69,7 +92,7 @@
                                 </svg>
                             </li>
                         </a>
-                        <a href="https://www.facebook.com/HotelRealdePlata?mibextid=ZbWKwL" class="link_social_foot">
+                        <a target="_blank" href="https://www.facebook.com/HotelRealdePlata?mibextid=ZbWKwL" class="link_social_foot">
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.157 10">
                                     <path d="M1138.4,3575.748l.308.112v1.518c-.4.026-.788.054-1.174.076a.6.6,0,0,0-.609.634c-.025.427-.005.856-.005,1.326h1.742c-.071.581-.129,1.12-.214,1.652-.01.062-.175.135-.271.139-.4.015-.808.006-1.249.006v4.538h-1.856v-4.529h-1.52v-1.779h1.535c0-.555-.01-1.058,0-1.561a2.053,2.053,0,0,1,1.722-2.074.358.358,0,0,0,.1-.057Z" transform="translate(-1133.552 -3575.748)" fill="#fff"/>
@@ -80,17 +103,28 @@
                 </div>
             </div>
             <div class="legales">
-                <p class="txt_general_bn">® 2023,  Derechos Reservados</p>
-                <a href="aviso-privacidad.php" class="txt_general_bn">Aviso de privacidad</a>
-                <a href="politicas-cancelacion.php" class="txt_general_bn">Políticas de cancelación</a>
+                            
+                <?php 
+                    if(stristr($url_actual, 'en/') === FALSE){
+                        echo '<p class="txt_general_bn">® 2023,  Derechos Reservados</p>';
+                        echo '<a href="aviso-privacidad.php" class="txt_general_bn">Aviso de privacidad</a>';
+                        echo '<a href="terminos-condiciones.php" class="txt_general_bn">Términos y condiciones</a>';
+                        echo '<a href="politicas-cancelacion.php" class="txt_general_bn">Políticas de cancelación</a>';
+                    }else{
+                        echo '<p class="txt_general_bn">® 2023,  All rights reserved</p>';
+                        echo '<a href="../aviso-privacidad.php" class="txt_general_bn">Privacy Notice</a>';
+                        echo '<a href="../politicas-cancelacion.php" class="txt_general_bn">Cancellation policies</a>';
+                    }
+                ?>
+
             </div>
         </div>
     </footer>
 
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Public/js/main.js?ver=1.1.18"></script>
+    <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/main.js?ver=1.2.20"></script>
 
     <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/scrollReveal.min.js"></script>

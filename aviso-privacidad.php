@@ -9,8 +9,8 @@
     <!-- ESPACIO TOP -->
     <div class="space_top"></div>
 
-    <!-- HACIENDA -->
-    <section class="encabezado_hacienda text-center" id="encab_hacienda">
+    <!-- ENCABEZADO -->
+    <section class="encabezado_privacidad text-center" id="encab_hacienda">
         <!-- <h3 class="subtitulo">Hacienda</h3> -->
         <h2 class="tit_primero_red max-w900">Aviso de privacidad</h2>
     </section>

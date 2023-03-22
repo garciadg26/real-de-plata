@@ -5,6 +5,7 @@
 
 </head>
 <body onload="cargandoHome();">
+    
     <?php include_once "Public/include/nav.php"; ?>
     <!-- SLIDER PRINCIPAL -->
     <section>
@@ -15,11 +16,21 @@
         </div>
         <div class="home-slider owl-carousel js-fullheight">
             <!-- ITEM 01 -->
-            <div class="slider-item js-fullheight slider-item01">
-            </div>
+            <div class="slider-item js-fullheight slider-item01"></div>
             <!-- ITEM 02 -->
-            <div class="slider-item js-fullheight slider-item02">
-            </div>
+            <div class="slider-item js-fullheight slider-item02"></div>
+            <!-- ITEM 03 -->
+            <div class="slider-item js-fullheight slider-item03"></div>
+            <!-- ITEM 04 -->
+            <div class="slider-item js-fullheight slider-item04"></div>
+            <!-- ITEM 05 -->
+            <div class="slider-item js-fullheight slider-item05"></div>
+            <!-- ITEM 06 -->
+            <div class="slider-item js-fullheight slider-item06"></div>
+            <!-- ITEM 07 -->
+            <div class="slider-item js-fullheight slider-item07"></div>
+            <!-- ITEM 08 -->
+            <div class="slider-item js-fullheight slider-item08"></div>
         </div>
         <div class="slider_detalle">
             <div class="">
@@ -84,9 +95,9 @@
                 <div class="cont_isotipo_real home__photo1">
                     <img src="Public/images/svg/isotipo-real-de-plata.svg" alt="">
                 </div>
-                <div class="max-w">
+                <div class="max-w home__photo3">
                     <img src="" alt="">
-                    <h1 class="tit_segundo_bn home__photo3"><span class="capitular">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h1>
+                    <h1 class="tit_segundo_bn"><span class="capitular">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h1>
                     <p class="txt_general_bn home__photo5">Un lugar lleno de historia donde vives la naturaleza con lujo
                         y la exclusividad de una hacienda tradicional.</p>
                         <div class="cont_btn home__photo7">
