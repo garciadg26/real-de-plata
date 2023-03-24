@@ -124,7 +124,7 @@
     <!-- JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/main.js?ver=1.2.20"></script>
+    <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/main.js?ver=1.2.22"></script>
 
     <!-- SCROLL REVEAL -->
     <script type="text/javascript" src="<?php echo constant('URL') ?>Public/js/scrollReveal.min.js"></script>

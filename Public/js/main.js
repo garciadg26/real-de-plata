@@ -53,39 +53,39 @@ function menuActive(){
     // EVENTOS
     if(document.URL.includes('eventos.php')){
         $('.navbar-nav > li').removeClass("active");
-        $('.navbar-nav > li:nth-child(6)').addClass("active");
+        $('.navbar-nav > li:nth-child(3)').addClass("active");
         header.classList.add('color_white');
     }
     // EVENTOS
     if(document.URL.includes('events.php')){
         $('.navbar-nav > li').removeClass("active");
-        $('.navbar-nav > li:nth-child(6)').addClass("active");
+        $('.navbar-nav > li:nth-child(3)').addClass("active");
         header.classList.add('color_white');
     }
     
     // CONTACTO
     if(document.URL.includes('contacto.php')){
         $('.navbar-nav > li').removeClass("active");
-        $('.navbar-nav > li:nth-child(7)').addClass("active");
+        $('.navbar-nav > li:nth-child(6)').addClass("active");
         header.classList.add('color_white');
     }
     // CONTACTO
     if(document.URL.includes('contact.php')){
         $('.navbar-nav > li').removeClass("active");
-        $('.navbar-nav > li:nth-child(7)').addClass("active");
+        $('.navbar-nav > li:nth-child(6)').addClass("active");
         header.classList.add('color_white');
     }
     
     // RESERVAR
     if(document.URL.includes('reservar.php')){
         $('.navbar-nav > li').removeClass("active");
-        $('.navbar-nav > li:nth-child(8)').addClass("active");
+        $('.navbar-nav > li:nth-child(7)').addClass("active");
         header.classList.add('color_white');
     }
     // RESERVAR
     if(document.URL.includes('book.php')){
         $('.navbar-nav > li').removeClass("active");
-        $('.navbar-nav > li:nth-child(8)').addClass("active");
+        $('.navbar-nav > li:nth-child(7)').addClass("active");
         header.classList.add('color_white');
     }
     

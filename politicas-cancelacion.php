@@ -25,7 +25,8 @@
             <br><br>
             <p class="txt_general">*Es necesaria previa reservación <br>
                                     **Instalaciones solo adultos <br>
-                                    ***No aceptamos mascotas
+                                    ***No aceptamos mascotas <br>
+                                    ****Disponible al contratar un evento
             </p>
         </div>
     </section>

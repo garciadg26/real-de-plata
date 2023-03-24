@@ -65,13 +65,18 @@
                                 </div>
                             </div>
                             <div class="item_form">
+                                <img src="Public/images/svg/icon-motivo.svg" alt="">
+                                <input class="formulario__input" type="text" name="motivoVisita" id="motivoVisita" placeholder="Event type">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <!-- <div class="item_form">
                                 <img src="../Public/images/svg/icon-motivo.svg" alt="">
                                 <select name="selectMotivo" id="selectMotivo">
                                     <option value="">Reason for your visit</option>
                                     <option value="evento">Event</option>
                                     <option value="vacaciones">Holidays</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="btn_reserv">
                             <div class="formulario__mensaje" id="formulario__mensaje">
@@ -96,7 +101,7 @@
                 </div>
                 <div class="max-w home__photo3">
                     <img src="" alt="">
-                    <h1 class="tit_segundo_bn"><span class="capitular">G</span>rand Hacienda & Hotel Boutique, a world heritage site dating from the XVI century, located on what was known as “Ruta de la Plata” meaning the Silver Route.</h1>
+                    <h1 class="tit_segundo_bn"><span class="capitular">G</span>rand Hacienda & a world heritage site dating from the XVI century, located on what was known as “Ruta de la Plata” meaning the Silver Route.</h1>
                     <p class="txt_general_bn home__photo5">A place full of history where you will experience nature with the luxury and exclusivity of a traditional Hacienda.</p>
                         <div class="cont_btn home__photo7">
                             <a href="en/hacienda.php" class="btn_general btn_principal_bn">Come visit us</a>

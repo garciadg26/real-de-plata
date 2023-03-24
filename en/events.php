@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6 home__photo2">
                     <p class="txt_general">The perfect place to turn your dreams into reality:</p>
-                    <p class="txt_general">engagement parties, proposals, bachelorette parties, family gatherings, amongst other occasions.</p>
+                    <p class="txt_general">engagement parties, proposals, bachelorette parties, wedding, family gatherings, amongst other occasions.</p>
                 </div>
             </div>
             <div class="row fila_btn_txt_descrip">

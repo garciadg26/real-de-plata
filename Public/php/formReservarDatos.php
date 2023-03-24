@@ -3,7 +3,7 @@
     $fechaLlegada = $_POST["fechaLlegada"] ?? '';
     $fechaSalida = $_POST["fechaSalida"] ?? '';
     $numeroPersonas = $_POST["numPersonas"] ?? '';
-    $selectMotivo = $_POST["selectMotivo"] ?? '';
+    $selectMotivo = 'Evento';
     $nombre = $_POST["nombre"] ?? '';
     $telefono = $_POST["telefono"] ?? '';
     $mensaje = $_POST["mensaje"] ?? '';

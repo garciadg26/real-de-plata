@@ -67,12 +67,17 @@
                             </div>
                             <div class="item_form">
                                 <img src="Public/images/svg/icon-motivo.svg" alt="">
+                                <input class="formulario__input" type="text" name="motivoVisita" id="motivoVisita" placeholder="Tipo de evento">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <!-- <div class="item_form">
+                                <img src="Public/images/svg/icon-motivo.svg" alt="">
                                 <select name="selectMotivo" id="selectMotivo">
                                     <option value="">Motivo de su visita</option>
                                     <option value="evento">Evento</option>
                                     <option value="vacaciones">Vacaciones</option>
                                 </select>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="btn_reserv">
                             <div class="formulario__mensaje" id="formulario__mensaje">
@@ -97,7 +102,7 @@
                 </div>
                 <div class="max-w home__photo3">
                     <img src="" alt="">
-                    <h1 class="tit_segundo_bn"><span class="capitular">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h1>
+                    <h1 class="tit_segundo_bn"><span class="capitular">G</span>rand Hacienda & Patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h1>
                     <p class="txt_general_bn home__photo5">Un lugar lleno de historia donde vives la naturaleza con lujo
                         y la exclusividad de una hacienda tradicional.</p>
                         <div class="cont_btn home__photo7">
@@ -193,7 +198,17 @@
                 C.P. 76250</p>
         </div>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.2365629814335!2d-100.34217419301855!3d20.757946629515576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35fbefbacb021%3A0x99185a1ee630f346!2sHotel%20Mes%C3%B3n%20Real%20de%20Plata!5e0!3m2!1ses-419!2smx!4v1676496653951!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <picture>
+            <source
+                srcset="Public/images/mapa-meson-real-de-plata-sm.jpg 320w, 
+                    Public/images/mapa-meson-real-de-plata-sm.jpg 800w, 
+                    Public/images/mapa-meson-real-de-plata-lg.jpg 1200w"
+                sizes="(min-width: 60rem) 80vw, 
+                    (min-width: 40rem) 90vw, 
+                    100vw">
+                <img class="img_map img-fluid" src="Public/images/mapa-meson-real-de-plata-lg.jpg" alt="">
+            </picture>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.2365629814335!2d-100.34217419301855!3d20.757946629515576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35fbefbacb021%3A0x99185a1ee630f346!2sHotel%20Mes%C3%B3n%20Real%20de%20Plata!5e0!3m2!1ses-419!2smx!4v1676496653951!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
     </section>
 

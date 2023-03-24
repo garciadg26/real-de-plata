@@ -40,7 +40,7 @@
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/style.css?ver=1.1.40">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/style.css?ver=1.1.42">
 
     <!-- SLIDER -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">

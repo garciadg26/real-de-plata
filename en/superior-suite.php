@@ -69,7 +69,8 @@
                             <p class="txt_general">Cancelación realizada durante las 144 horas antes de la fecha de llegada, se reembolsa el 100% del anticipo.</p> -->
                             <p class="txt_general home__photo12">*Prior reservation is mandatory. <br>
                                                     **Adults only. <br>
-                                                    ***No pets allowed.
+                                                    ***No pets allowed. <br>
+                                                    ****Available when hiring an event.
                             </p>
                         </div>
                     </div>

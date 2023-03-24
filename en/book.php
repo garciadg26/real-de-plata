@@ -60,10 +60,9 @@
                                 <!-- Grupo: Teléfono -->
                                 <div class="formulario__grupo" id="grupo__select">
                                     <div class="formulario__grupo-input">
-                                        <select name="selectMotivo" id="selectMotivo">
+                                        <select name="selectMotivo" id="selectMotivo" disabled>
                                             <option value="">Reason for your visit</option>
-                                            <option value="evento">Event</option>
-                                            <option value="vacaciones">holidays</option>
+                                            <option value="evento" selected>Event</option>
                                         </select>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>

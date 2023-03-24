@@ -1,5 +1,5 @@
 <?php $title = "Hacienda - Mesón Real De Plata"; ?>
-<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una experiencia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
 <?php include_once "Public/include/head.php"; ?>
 
@@ -23,11 +23,11 @@
     <!-- PATRIMONIO HUMANIDAD -->
     <section class="subtit_hacienda" id="subtit_hacienda">
         <div class="cont_tit_hacienda">
-            <h2 class="tit_primero home__photo1"><span class="capitular_red">G</span>rand Hacienda & Hotel Boutique patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h2>
+            <h2 class="tit_primero home__photo1"><span class="capitular_red">G</span>rand Hacienda & Patrimonio de la humanidad que data del s. XVI, ubicada en la antigua Ruta de la Plata.</h2>
         </div>
         <div class="cont_txt_hacienda home__photo2">
             <p class="txt_general">Un lugar lleno de historia donde vives la naturaleza con el lujo y la belleza de una hacienda tradicional.</p>
-            <p class="txt_general">Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano.</p>
+            <p class="txt_general">Vive una experiencia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano.</p>
             <p class="txt_general">Sala de masajes* / Gimnasio / Cantina / Bicicletas/  Jacuzzi exterior / Clases de yoga / Traslado desde y hacia el aeropuerto / Campo de práctica para golf.</p>
         </div>
     </section>
@@ -43,13 +43,13 @@
             </div>
             <div class="right_txt_chi home__photo5">
                 <h1 class="tit_primero"><span class="capitular_red">L</span>a Gran Hacienda De Chichimequillas</h1>
-                <p class="txt_general">El Mesón Real De Plata, declarado como patrimonio de la humanidad por la UNESCO. Es el escenario ideal para descansar, relajarse y disfrutar de un tiempo de reconexión con la naturaleza, con los amigos, con la familia y con uno mismo.</p>
+                <p class="txt_general">El Mesón Real De Plata, declarado como patrimonio de la humanidad por la UNESCO. Es el escenario ideal para eventos, bodas y disfrutar de un tiempo de reconexión con la naturaleza, con los amigos, con la familia y con uno mismo.</p>
                 <p class="txt_general">Construido durante el siglo XVI por los colonizadores españoles para ser un bastión militar, adaptándose con el paso de los años para ser el hospedaje de viajeros que recorrían el Camino Real de Tierra Adentro, convirtiéndose así en un refugio y lugar de encuentro para mercaderes y viajeros.</p>
                 <p class="txt_general">La hospitalidad es parte de nuestra historia.</p>
-                <p class="txt_general">Nuestras habitaciones se caracterizan por ser el perfecto equilibrio entre confort y hospitalidad para asegurar que cada uno de nuestros huéspedes disfrute una estancia única y placentera.</p>
+                <p class="txt_general">Nuestras habitaciones se caracterizan por ser el perfecto equilibrio entre confort y hospitalidad para asegurar que cada uno de nuestros invitados disfrute una experiencia única y placentera.</p>
                 <p class="txt_general">Contamos con el ambiente ideal para cada momento de tu vida. Ya sea para tus reuniones familiares, empresariales o retiros.</p>
                 <p class="txt_general">Cada espacio está minuciosamente diseñado para recorrer el camino de la inspiración, la creatividad, el optimismo, la vitalidad y la libertad.</p>
-                <p class="txt_general">Platícanos de la historia que quieres crear y cómo la quieres vivir, nosotros nos encargamos de hacerla realidad. Ya sea organizando una velada tranquila, una degustación de vinos de la región, un espectáculo de danza prehispánica o un tablao flamenco… te aseguramos que será inolvidable.</p>
+                <p class="txt_general">Platícanos de la historia que quieres crear y cómo la quieres vivir, nosotros nos encargamos de hacerla realidad. Te aseguramos que será inolvidable.</p>
             </div>
         </div>
     </section>
@@ -80,8 +80,8 @@
                 <a class="gallery-group gallery_item_2 home__photo2" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-02.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-02.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
-                <a class="gallery-group gallery_item_6 home__photo6" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-06.jpg">
-                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-06.jpg" alt="Hotel Mesón Real De Plata">
+                <a class="gallery-group gallery_item_6 home__photo6" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-6.jpg">
+                    <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-6.jpg" alt="Hotel Mesón Real De Plata">
                 </a>
                 <a class="gallery-group gallery_item_10 home__photo10" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-galeria-10.jpg">
                     <img class="img-fluid gallery_img" src="Public/images/hotel-meson-real-de-plata-galeria-10.jpg" alt="Hotel Mesón Real De Plata">

@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-xl-4 col-lg-5 col-md-6 home__photo2">
                     <p class="txt_general">El lugar ideal para que vivas el evento de tus sueños.</p>
-                    <p class="txt_general">Fiestas de compromiso, pedidas de mano, despedidas de soltera(o), encuentros familiares y muchos más.</p>
+                    <p class="txt_general">Fiestas de compromiso, pedidas de mano, despedidas de soltera(o), bodas, encuentros familiares y muchos más.</p>
                 </div>
             </div>
             <div class="row fila_btn_txt_descrip">

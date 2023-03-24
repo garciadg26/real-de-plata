@@ -3,7 +3,8 @@
     $fechaLlegada = $_POST["fechaLlegada"] ?? '';
     $telefono = $_POST["telefono"] ?? '';
     $numPersonas = $_POST["numPersonas"] ?? '';
-    $motivoVisita = $_POST["selectMotivo"] ?? '';
+    $motivoVisita = $_POST["motivoVisita"] ?? '';
+    $visita = 'Evento';
 
     //ENVIAMOS EL FORMULARIO
     echo('DATOS ENVIADOS CON EXITO: ' . $fechaLlegada . $telefono . $numPersonas . $motivoVisita);
@@ -37,7 +38,7 @@
         
 
 
-        $body = $cabecera . "\n\n" . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . '<br>Fecha de llegada: ' . $fechaLlegada . "\n\n" . '<br>Número de personas: ' . $numPersonas . "\n\n" . '<br>Motivo de visita: ' . $motivoVisita . "\n\n";
+        $body = $cabecera . "\n\n" . 'Asunto: ' . $visita . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . '<br>Fecha de llegada: ' . $fechaLlegada . "\n\n" . '<br>Número de personas: ' . $numPersonas . "\n\n" . '<br>Motivo de visita: ' . $motivoVisita . "\n\n";
 
         $success = @mail($email_to, $asunto, $body, $headers);
         echo "Correo enviado";
