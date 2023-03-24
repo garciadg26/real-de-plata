@@ -15,7 +15,7 @@
     <!-- EVENTOS -->
     <section class="encabezado_reserva text-center" id="encab_reserva">
         <h3 class="subtitulo home__photo1">Contact</h3>
-        <h2 class="tit_primero_red max-w900 home__photo3">Book your visit <br> Now!</h2>
+        <h2 class="tit_primero_red max-w900 home__photo3">Reservations</h2>
     </section>
 
     <!-- FORMULARIO CONTACTO -->
@@ -39,23 +39,13 @@
                                 <!-- Grupo: Fecha de salida -->
                                 <div class="formulario__grupo" id="grupo__fechaSalida">
                                     <div class="formulario__grupo-input item_form_date">
-                                        <input type="text" name="fechaSalida" id="fechaSalida" placeholder="Check-in date" onfocus="(this.type='date')" onblur="(this.type='date')" require>
+                                        <input type="text" name="fechaSalida" id="fechaSalida" placeholder="Event date" onfocus="(this.type='date')" onblur="(this.type='date')" require>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row form_row2">
-                            <div class="col-md-6">
-                                <!-- Grupo: Correo Electronico -->
-                                <div class="formulario__grupo" id="grupo__numPersonas">
-                                    <div class="formulario__grupo-input">
-                                        <input type="number" name="numPersonas" id="numPersonas" placeholder="No. of Guests">
-                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                                    </div>
-                                    <p class="formulario__input-error">El número de personas solo puede tener números.</p>
-                                </div>
-                            </div>
                             <div class="col-md-6">
                                 <!-- Grupo: Teléfono -->
                                 <div class="formulario__grupo" id="grupo__select">
@@ -67,6 +57,16 @@
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                     <p class="formulario__input-error">The phone number can only contain numbers and the minimum is 10 digits.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Grupo: Correo Electronico -->
+                                <div class="formulario__grupo" id="grupo__numPersonas">
+                                    <div class="formulario__grupo-input">
+                                        <input type="number" name="numPersonas" id="numPersonas" placeholder="No. of Guests">
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                    <p class="formulario__input-error">El número de personas solo puede tener números.</p>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="row form_row3">
                             <div class="col-md-12">
-                                <textarea class="formulario__input" name="mensaje" id="mensaje" placeholder="Message"></textarea>
+                                <textarea class="formulario__input" name="mensaje" id="mensaje" placeholder="Tell us about your event"></textarea>
                             </div>    
                         </div>
                         <div class="row form_row4">

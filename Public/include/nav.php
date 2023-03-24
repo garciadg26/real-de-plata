@@ -33,18 +33,18 @@
                     <li class="nav-item sub-item">
                         <a href="eventos.php" class="nav-link">Eventos</a>
                         <ul class="submenu-item">
-                            <li class="submeny_item">
+                            <!-- <li class="submeny_item">
                                 <small>Habitaciones</small> <br>
-                            </li>
+                            </li> -->
                             <li class="submeny_item">
-                                <a href="junior-suite.php" class="nav-link">Junior Suite</a>
+                                <a href="junior-suite.php" class="nav-link">Habitaciones</a>
                             </li>
-                            <li class="submeny_item">
+                            <!-- <li class="submeny_item">
                                 <a href="master-suite.php" class="nav-link">Master Suite</a>
                             </li>
                             <li class="submeny_item">
                                 <a href="superior-suite.php" class="nav-link">Superior Suite</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -53,10 +53,10 @@
                         </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="eventos.php">Eventos</a>
-                            <span class="dropdown-item">Habitaciones</span>
-                            <a class="dropdown-item" href="junior-suite.php">Junior Suite</a>
-                            <a class="dropdown-item" href="master-suite.php">Master Suite</a>
-                            <a class="dropdown-item" href="superior-suite.php">Superior Suite</a>
+                            <!-- <span class="dropdown-item">Habitaciones</span> -->
+                            <a class="dropdown-item" href="junior-suite.php">Habitaciones</a>
+                            <!-- <a class="dropdown-item" href="master-suite.php">Master Suite</a>
+                            <a class="dropdown-item" href="superior-suite.php">Superior Suite</a> -->
                         </div>
                     </li>
                     <li class="nav-item nav-item-brand">

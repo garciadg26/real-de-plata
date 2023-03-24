@@ -62,7 +62,7 @@
                 $email_to = 'contacto@mesonrealdeplata.com, ricardo@tiposlibres.com';
 
 
-                $body = $cabecera . "\n\n" . "\n\n" . 'Nombre: ' . $nombre . "\n\n" . '<br>Teléfono: ' . $telefono . "\n\n" . '<br>Fecha de llegada: ' . $fechaLlegada . "\n\n" . '<br>Fecha de salida: ' . $fechaSalida . "\n\n" . '<br>Número de personas: ' . $numeroPersonas  . "\n\n" . '<br>Motivo del viaje: ' . $selectMotivo . '<br>Mensaje: ' . $mensaje . "\n\n";
+                $body = $cabecera . "\n\n" . "\n\n" . 'Nombre: ' . $nombre . "\n\n" . '<br>Teléfono: ' . $telefono . "\n\n" . '<br>Fecha de llegada: ' . $fechaLlegada . "\n\n" . '<br>Fecha del evento: ' . $fechaSalida . "\n\n" . '<br>Número de personas: ' . $numeroPersonas  . "\n\n" . '<br>Motivo del viaje: ' . $selectMotivo . '<br>Mensaje: ' . $mensaje . "\n\n";
 
                 $success = @mail($email_to, $asunto, $body, $headers);
                 echo "Correo enviado";

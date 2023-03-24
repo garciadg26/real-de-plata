@@ -33,18 +33,16 @@
                     <li class="nav-item sub-item">
                         <a href="events.php" class="nav-link">Events</a>
                         <ul class="submenu-item">
+                            <!-- <li class="submeny_item">Rooms</li> -->
                             <li class="submeny_item">
-                                Rooms
+                                <a href="junior-suite.php" class="nav-link">Rooms</a>
                             </li>
-                            <li class="submeny_item">
-                                <a href="junior-suite.php" class="nav-link">Junior Suite</a>
-                            </li>
-                            <li class="submeny_item">
+                            <!-- <li class="submeny_item">
                                 <a href="master-suite.php" class="nav-link">Master Suite</a>
                             </li>
                             <li class="submeny_item">
                                 <a href="superior-suite.php" class="nav-link">Superior Suite</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -52,9 +50,10 @@
                         Events
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="junior-suite.php">Junior Suite</a>
-                            <a class="dropdown-item" href="master-suite.php">Master Suite</a>
-                            <a class="dropdown-item" href="superior-suite.php">Superior Suite</a>
+                            <a class="dropdown-item" href="events.php">Events</a>
+                            <a class="dropdown-item" href="junior-suite.php">Rooms</a>
+                            <!-- <a class="dropdown-item" href="master-suite.php">Master Suite</a>
+                            <a class="dropdown-item" href="superior-suite.php">Superior Suite</a> -->
                         </div>
                     </li>
                     <li class="nav-item nav-item-brand">
