@@ -1,5 +1,5 @@
     <?php $title = "Reservar - Mesón Real De Plata"; ?>
-    <?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+    <?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Patrimonio de la humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
     <?php include_once "Public/include/head.php"; ?>
     <!-- Google Captcha v3 -->
@@ -15,7 +15,7 @@
     <!-- EVENTOS -->
     <section class="encabezado_reserva text-center" id="encab_reserva">
         <h3 class="subtitulo home__photo1">Contacto</h3>
-        <h2 class="tit_primero_red max-w900 home__photo3">Reservaciones</h2>
+        <h2 class="tit_primero_red max-w900 home__photo3">Informes</h2>
     </section>
 
     <!-- FORMULARIO CONTACTO -->
@@ -24,24 +24,26 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
                     <!-- FORMULARIO -->
-                    <form id="reservar" class="form_contacto" method="post" action="Public/php/">
+                    <form id="reservar" class="form_contacto" action="" method="post">
                         <div class="row form_row2">
                             <div class="col-md-6">
-                                <!-- Grupo: Fecha de llegada -->
+                                <!-- Grupo: Fecha del evento -->
                                 <div class="formulario__grupo" id="grupo__fechaLlegada">
                                     <div class="formulario__grupo-input item_form_date">
-                                        <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Fecha de llegada" onfocus="(this.type='date')" onblur="(this.type='date')" require>
+                                        <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Fecha del evento" onfocus="(this.type='date')" onblur="(this.type='date')" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <!-- Grupo: Fecha de salida -->
-                                <div class="formulario__grupo" id="grupo__fechaSalida">
-                                    <div class="formulario__grupo-input item_form_date">
-                                        <input type="text" name="fechaSalida" id="fechaSalida" placeholder="Fecha del evento" onfocus="(this.type='date')" onblur="(this.type='date')" require>
+                                <!-- Grupo: Motivo de visita -->
+                                <div class="formulario__grupo" id="grupo__motivoVisita">
+                                    <div class="formulario__grupo-input">
+                                        <!-- <img src="Public/images/svg/icon-motivo.svg" alt=""> -->
+                                        <input class="formulario__input" type="text" name="motivoVisita" id="motivoVisita" placeholder="Tipo de evento" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
+                                    <p class="formulario__input-error">El tipo de evento solo puede contener letras y espacios.</p>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +65,7 @@
                                 <!-- Grupo: Correo Electronico -->
                                 <div class="formulario__grupo" id="grupo__numPersonas">
                                     <div class="formulario__grupo-input">
-                                        <input type="number" name="numPersonas" id="numPersonas" placeholder="No. de personas">
+                                        <input type="number" name="numPersonas" id="numPersonas" placeholder="No. de personas" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                     <p class="formulario__input-error">El número de personas solo puede tener números.</p>
@@ -75,7 +77,7 @@
                                 <!-- Grupo: Fecha de llegada -->
                                 <div class="formulario__grupo" id="grupo__nombre">
                                     <div class="formulario__grupo-input">
-                                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" require>
+                                        <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                     <p class="formulario__input-error">El nombre completo solo puede contener letras y espacios.</p>
@@ -85,7 +87,7 @@
                                 <!-- Grupo: Fecha de salida -->
                                 <div class="formulario__grupo" id="grupo__telefono">
                                     <div class="formulario__grupo-input">
-                                    <input type="text" name="telefono" id="telefono" placeholder="Tel. / Cel." require>
+                                    <input type="text" name="telefono" id="telefono" placeholder="Tel. / Cel." required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                     <p class="formulario__input-error">El número de teléfono solo puede contener números y el mínimo son 10 dígitos.</p>
@@ -123,6 +125,6 @@
 
     <?php include_once "Public/include/footer.php"; ?>
 
-    <script type="text/javascript" src="Public/js/form_reservar.js?ver=1.1.10"></script>
+    <script type="text/javascript" src="Public/js/form_reservar.js?ver=1.1.13"></script>
 </body>
 </html>

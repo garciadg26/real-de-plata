@@ -37,7 +37,7 @@
                                 <small>Habitaciones</small> <br>
                             </li> -->
                             <li class="submeny_item">
-                                <a href="junior-suite.php" class="nav-link">Habitaciones</a>
+                                <a href="eventos.php" class="nav-link">Tipo de eventos</a>
                             </li>
                             <!-- <li class="submeny_item">
                                 <a href="master-suite.php" class="nav-link">Master Suite</a>
@@ -52,9 +52,9 @@
                         Eventos
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="eventos.php">Eventos</a>
+                            <a class="dropdown-item" href="eventos.php">Tipo de Eventos</a>
                             <!-- <span class="dropdown-item">Habitaciones</span> -->
-                            <a class="dropdown-item" href="junior-suite.php">Habitaciones</a>
+                            <!-- <a class="dropdown-item" href="junior-suite.php">Habitaciones</a> -->
                             <!-- <a class="dropdown-item" href="master-suite.php">Master Suite</a>
                             <a class="dropdown-item" href="superior-suite.php">Superior Suite</a> -->
                         </div>
@@ -81,7 +81,7 @@
                                     <path d="M3.2.375H0v-.75H3.2Z" transform="translate(206.199 686.857)" fill="#fff"/>
                                 </g>
                             </svg>
-                            RESERVAR</a>
+                            Informes</a>
                     </li>
                     <li class="nav-item">
                         <div class="vacio"></div>

@@ -38,7 +38,7 @@
         
 
 
-        $body = $cabecera . "\n\n" . 'Asunto: ' . $visita . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . '<br>Fecha de llegada: ' . $fechaLlegada . "\n\n" . '<br>Número de personas: ' . $numPersonas . "\n\n" . '<br>Motivo de visita: ' . $motivoVisita . "\n\n";
+        $body = $cabecera . "\n\n" . 'Asunto: ' . $visita . "\n\n" . 'Teléfono: ' . $telefono . "\n\n" . '<br>Fecha del evento: ' . $fechaLlegada . "\n\n" . '<br>Número de personas: ' . $numPersonas . "\n\n" . '<br>Motivo de visita: ' . $motivoVisita . "\n\n";
 
         $success = @mail($email_to, $asunto, $body, $headers);
         echo "Correo enviado";

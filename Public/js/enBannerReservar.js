@@ -1,34 +1,31 @@
-let formulario = document.getElementById('reservar');
-const inputs = document.querySelectorAll('#reservar input');
+let formulario = document.getElementById('banner_reserva');
+const inputs = document.querySelectorAll('#banner_reserva input');
 
 const expresiones = {
-    motivoVisita: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras, numeros, guion y guion_bajo
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    //comentario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+    motivoVisita: /^[a-zA-ZÀ-ÿ\s]{1,20}$/, // Letras y espacios, pueden llevar acentos.
     //password: /^.{4,12}$/, // 4 a 12 digitos.
-    numPersonas: /^\d{1,10}$/,
-    telefono: /^\d{10,12}$/ // 7 a 14 numeros.
+    // correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    telefono: /^\d{10,12}$/, // 7 a 14 numeros.
+    numPersonas: /^\d{1,12}$/ // 1 a 12 numeros.
 }
 
 const campos = {
     motivoVisita: false,
-    nombre: false,
-    numPersonas: false,
-    telefono: false
+    telefono: false,
+    numPersonas: false
 }
 
 const validarFormulario = (e) =>{
     switch(e.target.name){
-        case "motivoVisita":
-            validarCampo(expresiones.motivoVisita, e.target, 'motivoVisita');
-        break;
-        case "nombre":
-            validarCampo(expresiones.nombre, e.target, 'nombre')
-        break;
-        case "numPersonas":
-            validarCampo(expresiones.numPersonas, e.target, 'numPersonas');
-        break;
         case "telefono":
             validarCampo(expresiones.telefono, e.target, 'telefono');
+            break;
+        case "numPersonas":
+            validarCampo(expresiones.numPersonas, e.target, 'numPersonas')
+        break;
+        case "motivoVisita":
+            validarCampo(expresiones.motivoVisita, e.target, 'motivoVisita')
         break;
     }
 } 
@@ -39,14 +36,14 @@ const validarCampo = (expresion, input, campo) => {
         document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
         document.querySelector(`#grupo__${campo} i`).classList.add('ion-md-checkmark-circle');
         document.querySelector(`#grupo__${campo} i`).classList.remove('ion-ios-close-circle');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        // document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
         campos[campo] = true;
     } else {
         document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
         document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
         document.querySelector(`#grupo__${campo} i`).classList.add('ion-ios-close-circle');
         document.querySelector(`#grupo__${campo} i`).classList.remove('ion-md-checkmark-circle');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+        // document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
         campos[campo] = false;
     }
 }
@@ -60,19 +57,22 @@ formulario.addEventListener('submit', e=>{
     e.preventDefault();
 
     //VALIDAMOS SI SE PRECIONO EL CAPTCHA
-    var response = grecaptcha.getResponse();
+    // var response = grecaptcha.getResponse();
 
-    if(response.length == 0){
-        //NO VERIFICADO
-        document.getElementById('formulario__mensaje-captcha').classList.add('formulario__mensaje-activo');
-        setTimeout(() => {
-            document.getElementById('formulario__mensaje-captcha').classList.remove('formulario__mensaje-activo');
-        }, 5000);
-    } else {
+    // if(response.length == 0){
+    //     //NO VERIFICADO
+    //     document.getElementById('formulario__mensaje-captcha').classList.add('formulario__mensaje-activo');
+    //     setTimeout(() => {
+    //         document.getElementById('formulario__mensaje-captcha').classList.remove('formulario__mensaje-activo');
+    //     }, 5000);
+    // } else {
         //VERIFICADO
         // const terminos = document.getElementById('terminos');
-        if(campos.motivoVisita && campos.nombre && campos.numPersonas && campos.telefono){
-            console.log("Ingrese a la validacion")
+        let selectMotivo = document.getElementById('selectMotivo');
+        console.log("Ingrese a la validacion")
+
+        if(campos.telefono && campos.numPersonas && campos.motivoVisita){
+
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
             setTimeout(() => {
                 document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
@@ -97,7 +97,7 @@ formulario.addEventListener('submit', e=>{
                 method:'POST',
                 body:datos,
             }
-            fetch('Public/php/formReservarDatos.php', peticion)
+            fetch('../Public/php/bannerReserva.php', peticion)
             .then(respuesta => respuesta.json())
             .then(respuesta =>{
         
@@ -118,13 +118,16 @@ formulario.addEventListener('submit', e=>{
 
         
         } else {
+            console.log("Motivo: " + campos.motivoVisita);
+            console.log("Telefono: " + campos.telefono);
+            console.log("personas: " * campos.numPersonas);
             document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
             setTimeout(() => {
                 document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
             }, 5000);
         }
         //alert("Captcha verificado");
-    }
+    // }
 
 
 });

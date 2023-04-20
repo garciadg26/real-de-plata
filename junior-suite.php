@@ -1,5 +1,5 @@
 <?php $title = "Junior Suite - Mesón Real De Plata"; ?>
-<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Patrimonio de la humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
 <?php include_once "Public/include/head.php"; ?>
 

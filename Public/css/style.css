@@ -100,6 +100,7 @@ p{
     color: var(--color-vino-real);
     font-size: 2rem;
     transition: all 0.3s;
+    padding-left: 12%;
 }
 .txt_nota_h{
     display: inline-block;
@@ -390,16 +391,16 @@ ul.navbar-nav li a, ul.navbar-nav li{
     background-image: url("../images/slider1-hotel-meson-real-de-plata.jpg");
 }
 .slider-item02{
-    background-image: url("../images/slider2-hotel-meson-real-de-plata.jpg");
+    background-image: url("../images/slider11-hotel-meson-real-de-plata.jpg");
 }
 .slider-item03{
-    background-image: url("../images/slider3-hotel-meson-real-de-plata.jpg");
+    background-image: url("../images/slider9-hotel-meson-real-de-plata.jpg");
 }
 .slider-item04{
     background-image: url("../images/slider4-hotel-meson-real-de-plata.jpg");
 }
 .slider-item05{
-    background-image: url("../images/slider5-hotel-meson-real-de-plata.jpg");
+    background-image: url("../images/slider10-hotel-meson-real-de-plata.jpg");
 }
 .slider-item06{
     background-image: url("../images/slider6-hotel-meson-real-de-plata.jpg");
@@ -480,7 +481,7 @@ ul.navbar-nav li a, ul.navbar-nav li{
     color: var(--color-gris);
     margin-top: -4px;
 }
-#fechaLlegada::placeholder, #fechaSalida::placeholder{
+#fechaLlegada::placeholder{
     background-image: url("../images/svg/icon_calendar.svg");
     background-position: center left;
     background-repeat: no-repeat;
@@ -697,7 +698,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: baseline;
     padding: 80px 0px;
 }
@@ -715,8 +716,9 @@ input::-webkit-datetime-edit-fields-wrapper {
     background-color: var(--color-vino-real);
 }
 .suite_master .btn_comun{
-    margin-left: 35%;
+    margin-left: 25%;
     z-index: 1;
+    margin-right: 12%;
 }
 .suite_master .tit_suite{
     margin-left: 5%;
@@ -760,19 +762,22 @@ input::-webkit-datetime-edit-fields-wrapper {
     position: relative;
     clip-path: polygon(0 25%, 100% 25%, 100% 75%, 0 75%);
 }
-.suite_02, .suite_03, .suite_05{
+.suite_01, .suite_02, .suite_03, .suite_05{
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.suite_01{
+    background-image: url("../images/Hotel-real-de-plata-eventos2.jpg");
+}
 .suite_02{
-    background-image: url("../images/hotel-real-de-plata-superior-suite.jpg");
+    background-image: url("../images/meson-real-de-plata-retiros.jpg");
 }
 .suite_03{
-    background-image: url("../images/Hotel-real-de-plata-master-suite.jpg");
+    background-image: url("../images/Hotel-real-de-plata-eventos4.jpg");
 }
 .suite_05{
-    background-image: url("../images/hotel-real-de-plata-junior-suite.jpg");
+    background-image: url("../images/meson-real-de-plata-bodas1.jpg");
 }
 .suite_master:hover .suite_number, .suite_master:hover .tit_suite{
     color: var(--color-white);
@@ -795,7 +800,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     content: "";
     left: calc(50% - 15px);
     width: 30px;
-    margin-top: 60px;
+    margin-top: 100px;
     height: 3px;
     background-color: var(--color-vino-real);
 }
@@ -817,7 +822,7 @@ input::-webkit-datetime-edit-fields-wrapper {
     margin-left: 20%;
 }
 .cont_img_eventos{
-    background-image: url("../images/Hotel-real-de-plata-eventos.jpg");
+    background-image: url("../images/Hotel-real-de-plata-eventos-proximamente.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1264,6 +1269,12 @@ input::-webkit-datetime-edit-fields-wrapper {
     top: 18px;
     margin-left: 120px;
 }
+#banner_reserva .item_form:nth-child(2) .formulario__validacion-estado{
+    margin-left: 144px;
+}
+#banner_reserva .item_form:nth-child(4) .formulario__validacion-estado {
+    margin-left: 156px;
+}
 .formulario__mensaje, .formulario__captcha{
 	height: 45px;
 	line-height: 45px;
@@ -1335,8 +1346,15 @@ input::-webkit-datetime-edit-fields-wrapper {
 }
 
 .vacio{
-    width: 80px;
+    width: 20px;
     height: 28px;
+    border:0px solid transparent;
+}
+.map_desktop{
+    display: block;
+}
+.map_movil{
+    display: none;
 }
 /* __RESPONSIVE__ */
     /* MAX 1280px */
@@ -1433,6 +1451,12 @@ input::-webkit-datetime-edit-fields-wrapper {
         padding: 60px 0px 80px 0px;
         max-width: 900px;
         margin-left: calc(50% - 450px);
+    }
+    .suite_number{
+        padding-left: 6%;
+    }
+    .suite_master .btn_comun{
+        margin-right: 6%;
     }
 }
 
@@ -1587,6 +1611,15 @@ input::-webkit-datetime-edit-fields-wrapper {
     #menu_dark .dropdown-item{
         padding: 0.5rem 1.5rem;
     }
+    .suite_number{
+        padding-left: 2%;
+    }
+    .suite_master .btn_comun{
+        margin-right: 2%;
+    }
+    .suite_master .cont_txt_overlay{
+        justify-content: center;
+    }
 }
 
     /* MAX 768px */
@@ -1648,7 +1681,7 @@ input::-webkit-datetime-edit-fields-wrapper {
         margin-bottom: 6px;
     }
     .notas_habitaciones::before{
-        margin-top: 100px;
+        margin-top: 140px;
     }
     .max-w400 {
         margin-left: calc(25% - 140px);
@@ -1709,16 +1742,16 @@ input::-webkit-datetime-edit-fields-wrapper {
         background-image: url("../images/slider1-hotel-meson-real-de-plata--ch.jpg");
     }
     .slider-item02{
-        background-image: url("../images/slider2-hotel-meson-real-de-plata--ch.jpg");
+        background-image: url("../images/slider11-hotel-meson-real-de-plata--ch.jpg");
     }
     .slider-item03{
-        background-image: url("../images/slider3-hotel-meson-real-de-plata--ch.jpg");
+        background-image: url("../images/slider9-hotel-meson-real-de-plata--ch.jpg");
     }
     .slider-item04{
         background-image: url("../images/slider4-hotel-meson-real-de-plata--ch.jpg");
     }
     .slider-item05{
-        background-image: url("../images/slider5-hotel-meson-real-de-plata--ch.jpg");
+        background-image: url("../images/slider10-hotel-meson-real-de-plata--ch.jpg");
     }
     .slider-item06{
         background-image: url("../images/slider6-hotel-meson-real-de-plata--ch.jpg");
@@ -1882,6 +1915,12 @@ input::-webkit-datetime-edit-fields-wrapper {
     }
     #fancybox-left-ico, #fancybox-right-ico {
         left: 50px!important;
+    }
+    .map_desktop{
+        display: none;
+    }
+    .map_movil{
+        display: block;
     }
 }
     /* MAX 414px */

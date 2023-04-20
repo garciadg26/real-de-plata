@@ -1,5 +1,5 @@
 <?php $title = "Contacto - Mesón Real De Plata"; ?>
-<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
 
 <?php include_once "include/head.php"; ?>
     <!-- Google Captcha v3 -->
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                    <h1 class="tit_primero home__photo1">Contact us</h1>
+                    <h1 class="tit_primero home__photo1">Information</h1>
                     <!-- FORMULARIO -->
                     <form id="formulario" class="form_contacto home__photo3" method="post" action="">
                         <div class="row form_row1">
@@ -110,7 +110,7 @@
 
     <?php include_once "../Public/include/footer.php" ?>
     
-    <script type="text/javascript" src="../Public/js/form_contacto.js?ver=1.1.10"></script>
+    <script type="text/javascript" src="../Public/js/enFormContacto.js?ver=1.1.11"></script>
 
 </body>
 </html>

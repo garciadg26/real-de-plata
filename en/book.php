@@ -1,5 +1,5 @@
-<?php $title = "Reservar - Mesón Real De Plata"; ?>
-    <?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+    <?php $title = "Reservar - Mesón Real De Plata"; ?>
+    <?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
 
     <?php include_once "include/head.php"; ?>
     <!-- Google Captcha v3 -->
@@ -15,7 +15,7 @@
     <!-- EVENTOS -->
     <section class="encabezado_reserva text-center" id="encab_reserva">
         <h3 class="subtitulo home__photo1">Contact</h3>
-        <h2 class="tit_primero_red max-w900 home__photo3">Reservations</h2>
+        <h2 class="tit_primero_red max-w900 home__photo3">Information</h2>
     </section>
 
     <!-- FORMULARIO CONTACTO -->
@@ -24,24 +24,26 @@
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
                     <!-- FORMULARIO -->
-                    <form id="reservar" class="form_contacto" method="post" action="Public/php/">
+                    <form id="reservar" class="form_contacto" action="" method="post">
                         <div class="row form_row2">
                             <div class="col-md-6">
                                 <!-- Grupo: Fecha de llegada -->
                                 <div class="formulario__grupo" id="grupo__fechaLlegada">
                                     <div class="formulario__grupo-input item_form_date">
-                                        <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Check-in date" onfocus="(this.type='date')" onblur="(this.type='date')" require>
+                                        <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Event date" onfocus="(this.type='date')" onblur="(this.type='date')" require>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <!-- Grupo: Fecha de salida -->
-                                <div class="formulario__grupo" id="grupo__fechaSalida">
-                                    <div class="formulario__grupo-input item_form_date">
-                                        <input type="text" name="fechaSalida" id="fechaSalida" placeholder="Event date" onfocus="(this.type='date')" onblur="(this.type='date')" require>
+                                <!-- Grupo: Motivo de visita -->
+                                <div class="formulario__grupo" id="grupo__motivoVisita">
+                                    <div class="formulario__grupo-input">
+                                        <!-- <img src="Public/images/svg/icon-motivo.svg" alt=""> -->
+                                        <input class="formulario__input" type="text" name="motivoVisita" id="motivoVisita" placeholder="Event type" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
+                                    <p class="formulario__input-error">The event type can only contain letters and spaces.</p>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +68,7 @@
                                         <input type="number" name="numPersonas" id="numPersonas" placeholder="No. of Guests">
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
-                                    <p class="formulario__input-error">El número de personas solo puede tener números.</p>
+                                    <p class="formulario__input-error">The number of people can only have numbers.</p>
                                 </div>
                             </div>
                         </div>
@@ -123,6 +125,6 @@
 
     <?php include_once "../Public/include/footer.php"; ?>
 
-    <script type="text/javascript" src="../Public/js/form_reservar.js?ver=1.1.10"></script>
+    <script type="text/javascript" src="../Public/js/enFormReservar.js?ver=1.1.13"></script>
 </body>
 </html>

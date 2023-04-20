@@ -1,5 +1,5 @@
 <?php $title = "Junior Suite - Mesón Real De Plata"; ?>
-<?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Gran Hacienda & Boutique Hotel. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
+<?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
 
 <?php include_once "include/head.php"; ?>
 

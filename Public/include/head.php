@@ -14,7 +14,7 @@
     <title><?php echo $title ?></title>
     <meta name="title" content="<?php echo $title; ?>" />
     <meta name="description" content="<?php echo $description; ?>" />
-    <meta name="keywords" content="Meson Real De Plata, Ruta De La Plata, Queretaro, travel mexico, travel, hotel boutique, hote, turismo, luxury hotel, luxury boutique hotel, travel queretaro, hacienda hotel, viaje queretaro, descanso, hoteles, chichimequillas, hacienda" />
+    <meta name="keywords" content="Meson Real De Plata, Ruta De La Plata, Queretaro, travel mexico, travel, turismo, travel queretaro, hacienda, viaje queretaro, descanso, chichimequillas, hacienda" />
     <meta http-equiv="content-language" content="es_MX" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="http://mesonrealdeplata.com/" />
@@ -40,7 +40,7 @@
 
     <!-- ESTILOS -->
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/style.css?ver=1.1.42">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>Public/css/style.css?ver=1.1.54">
 
     <!-- SLIDER -->
     <link rel="stylesheet" href="Public/css/owl.carousel.min.css">

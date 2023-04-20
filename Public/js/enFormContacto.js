@@ -1,31 +1,27 @@
-let formulario = document.getElementById('reservar');
-const inputs = document.querySelectorAll('#reservar input');
+let formulario = document.getElementById('formulario');
+const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-    motivoVisita: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras, numeros, guion y guion_bajo
+    //comentario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     //password: /^.{4,12}$/, // 4 a 12 digitos.
-    numPersonas: /^\d{1,10}$/,
+    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{10,12}$/ // 7 a 14 numeros.
 }
 
 const campos = {
-    motivoVisita: false,
     nombre: false,
-    numPersonas: false,
+    correo: false,
     telefono: false
 }
 
 const validarFormulario = (e) =>{
     switch(e.target.name){
-        case "motivoVisita":
-            validarCampo(expresiones.motivoVisita, e.target, 'motivoVisita');
-        break;
         case "nombre":
             validarCampo(expresiones.nombre, e.target, 'nombre')
         break;
-        case "numPersonas":
-            validarCampo(expresiones.numPersonas, e.target, 'numPersonas');
+        case "correo":
+            validarCampo(expresiones.correo, e.target, 'correo');
         break;
         case "telefono":
             validarCampo(expresiones.telefono, e.target, 'telefono');
@@ -71,8 +67,8 @@ formulario.addEventListener('submit', e=>{
     } else {
         //VERIFICADO
         // const terminos = document.getElementById('terminos');
-        if(campos.motivoVisita && campos.nombre && campos.numPersonas && campos.telefono){
-            console.log("Ingrese a la validacion")
+        if(campos.nombre && campos.correo && campos.telefono){
+
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
             setTimeout(() => {
                 document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
@@ -97,7 +93,7 @@ formulario.addEventListener('submit', e=>{
                 method:'POST',
                 body:datos,
             }
-            fetch('Public/php/formReservarDatos.php', peticion)
+            fetch('../Public/php/formContacto.php', peticion)
             .then(respuesta => respuesta.json())
             .then(respuesta =>{
         

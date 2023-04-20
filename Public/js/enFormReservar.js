@@ -97,7 +97,7 @@ formulario.addEventListener('submit', e=>{
                 method:'POST',
                 body:datos,
             }
-            fetch('Public/php/formReservarDatos.php', peticion)
+            fetch('../Public/php/formReservarDatos.php', peticion)
             .then(respuesta => respuesta.json())
             .then(respuesta =>{
         

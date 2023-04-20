@@ -1,5 +1,5 @@
-<?php $title = "Mesón Real De Plata - Grand Hacienda & Hotel Boutique"; ?>
-<?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Gran Hacienda & Boutique Hotel. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
+<?php $title = "Mesón Real De Plata - Grand Hacienda"; ?>
+<?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
 
 <?php include_once "include/head.php"; ?>
 
@@ -40,7 +40,7 @@
                             <div class="item_form_date">
                                 <!-- Grupo: Fecha de llegada -->                                
                                 <div class="icon_after"></div>
-                                <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Check-in date" onfocus="(this.type='date')" onblur="(this.type='date')">
+                                <input type="text" name="fechaLlegada" id="fechaLlegada" placeholder="Event date" onfocus="(this.type='date')" onblur="(this.type='date')" required>
                                 <!-- <p class="txt_date">Fecha de llegada</p> -->
                             </div>
                             <div class="item_form">
@@ -48,7 +48,7 @@
                                 <div class="formulario__grupo" id="grupo__telefono">
                                     <div class="formulario__grupo-input">
                                         <img src="../Public/images/svg/icon_phone_gris.svg" alt="">
-                                        <input class="formulario__input" type="tel" name="telefono" id="telefono" placeholder="Contact number">
+                                        <input class="formulario__input" type="tel" name="telefono" id="telefono" placeholder="Contact number" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                         <!-- <p class="txt_date">Fecha de salida</p> -->
                                     </div>
@@ -59,15 +59,20 @@
                                 <div class="formulario__grupo" id="grupo__numPersonas">
                                     <div class="formulario__grupo-input">
                                         <img src="../Public/images/svg/icon-numero-personas.svg" alt="">
-                                        <input class="formulario__input" type="number" name="numPersonas" id="numPersonas" placeholder="No. of Guests">
+                                        <input class="formulario__input" type="number" name="numPersonas" id="numPersonas" placeholder="No. of Guests" required>
                                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="item_form">
-                                <img src="Public/images/svg/icon-motivo.svg" alt="">
-                                <input class="formulario__input" type="text" name="motivoVisita" id="motivoVisita" placeholder="Event type">
-                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                <!-- Grupo: Motivo de visita -->
+                                <div class="formulario__grupo" id="grupo__motivoVisita">
+                                    <div class="formulario__grupo-input">
+                                        <img src="Public/images/svg/icon-motivo.svg" alt="">
+                                        <input class="formulario__input" type="text" name="motivoVisita" id="motivoVisita" placeholder="Event type" required>
+                                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                    </div>
+                                </div>
                             </div>
                             <!-- <div class="item_form">
                                 <img src="../Public/images/svg/icon-motivo.svg" alt="">
@@ -82,9 +87,9 @@
                             <div class="formulario__mensaje" id="formulario__mensaje">
                                 <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> When sending data. </p>
                             </div>
-                            <input class="btn_reservar_ahora" type="submit" value="Book now">
+                            <input class="btn_reservar_ahora" type="submit" value="Ask for information">
                             <!-- RESERVAR AHORA -->
-                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>Reservation:</b> sent successfully!</p>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>Request:</b> Sent successfully!</p>
                         </div>
                     </form>
                 </div>
@@ -133,31 +138,45 @@
     <!-- HABITACIONES -->
     <section id="habitaciones" class="habitaHome">
         <div class="cont_tit_habitaciones">
-            <h2 class="tit_primero home__photo2"><span class="capitular_red">R</span>OOMS</h2>
+            <h2 class="tit_primero home__photo2"><span class="capitular_red">E</span>VENTS</h2>
             <p class="txt_general max-w400 home__photo3">Enjoy a completely pleasant stay, far from the city and in a unique historical and rural environment.</p>
         </div>
-        <article class="suite_master suite_05 home__photo1">
+        <article class="suite_master suite_05 home__photo2">
             <div class="cont_txt_overlay">
-                <p class="suite_number">05</p>
-                <h6 class="tit_suite">Junior Suite</h6>
-                <a class="btn_comun btn_suite" href="en/master-suite.php">See more</a>
+                <p class="suite_number">01</p>
+                <h6 class="tit_suite">Wedding</h6>
+                <div class="vacio btn_comun"></div>
+                <!-- <a class="btn_comun btn_suite" href="master-suite.php">Ver más</a> -->
             </div>
         </article>
-        <article class="suite_master suite_02 home__photo2">
+        <article class="suite_master suite_01 home__photo1">
             <div class="cont_txt_overlay">
                 <p class="suite_number">02</p>
-                <h6 class="tit_suite">Master Suite</h6>
-                <a class="btn_comun btn_suite" href="en/master-suite.php">See more</a>
+                <h6 class="tit_suite">Meetings</h6>
+                <div class="vacio btn_comun"></div>
+                <!-- <a class="btn_comun btn_suite" href="master-suite.php">Ver más</a> -->
             </div>
         </article>
-        <article class="suite_master suite_03 home__photo3">
+        <article class="suite_master suite_02 home__photo3">
             <div class="cont_txt_overlay">
                 <p class="suite_number">03</p>
-                <h6 class="tit_suite">Superior Suite</h6>
-                <a class="btn_comun btn_suite" href="en/master-suite.php">See more</a>
+                <h6 class="tit_suite">Retreats</h6>
+                <div class="vacio btn_comun"></div>
+                <!-- <a class="btn_comun btn_suite" href="master-suite.php">Ver más</a> -->
+            </div>
+        </article>
+        <article class="suite_master suite_03 home__photo4">
+            <div class="cont_txt_overlay">
+                <p class="suite_number">04</p>
+                <h6 class="tit_suite">Team Building</h6>
+                <div class="vacio btn_comun"></div>
+                <!-- <a class="btn_comun btn_suite" href="master-suite.php">Ver más</a> -->
             </div>
         </article>
         <div class="notas_habitaciones">
+            <div class="text-center">
+                <p class="txt_nota_h home__photo1">*We have a hosting service when contracting an event</p>
+            </div>
             <p class="txt_nota_h home__photo1">*Prior reservation is mandatory.</p>
             <p class="txt_nota_h home__photo2">**Adults only.</p>
             <p class="txt_nota_h home__photo3">***No pets allowed.</p>
@@ -195,8 +214,13 @@
                 Col. Chichimequillas, El Marqués, Qro. <br>
                 C.P. 76250</p>
         </div>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.2365629814335!2d-100.34217419301855!3d20.757946629515576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35fbefbacb021%3A0x99185a1ee630f346!2sHotel%20Mes%C3%B3n%20Real%20de%20Plata!5e0!3m2!1ses-419!2smx!4v1676496653951!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map map_desktop">    
+            <img class="img_map img-fluid" src="<?php echo constant('URL') ?>Public/images/mapa-meson-real-de-plata-en-lg.jpg" alt="">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.2365629814335!2d-100.34217419301855!3d20.757946629515576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35fbefbacb021%3A0x99185a1ee630f346!2sHotel%20Mes%C3%B3n%20Real%20de%20Plata!5e0!3m2!1ses-419!2smx!4v1676496653951!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <div class="map map_movil">    
+            <img class="img_map img-fluid" src="<?php echo constant('URL') ?>Public/images/mapa-meson-real-de-plata-en-sm.jpg" alt="">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.2365629814335!2d-100.34217419301855!3d20.757946629515576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35fbefbacb021%3A0x99185a1ee630f346!2sHotel%20Mes%C3%B3n%20Real%20de%20Plata!5e0!3m2!1ses-419!2smx!4v1676496653951!5m2!1ses-419!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
     </section>
 
@@ -205,6 +229,6 @@
     <script type="text/javascript" src="<?php echo constant('URL'); ?>Public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="<?php echo constant('URL'); ?>Public/js/slider.js?ver=1.1.10"></script>
     
-    <script type="text/javascript" src="<?php echo constant('URL'); ?>Public/js/banner_reserva.js?ver=1.1.15"></script>
+    <script type="text/javascript" src="<?php echo constant('URL'); ?>Public/js/enBannerReservar.js?ver=1.1.18"></script>
 </body>
 </html>

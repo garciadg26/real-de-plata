@@ -35,7 +35,7 @@
                         <ul class="submenu-item">
                             <!-- <li class="submeny_item">Rooms</li> -->
                             <li class="submeny_item">
-                                <a href="junior-suite.php" class="nav-link">Rooms</a>
+                                <a href="events.php" class="nav-link">Type of Events</a>
                             </li>
                             <!-- <li class="submeny_item">
                                 <a href="master-suite.php" class="nav-link">Master Suite</a>
@@ -50,8 +50,8 @@
                         Events
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="events.php">Events</a>
-                            <a class="dropdown-item" href="junior-suite.php">Rooms</a>
+                            <a class="dropdown-item" href="events.php">Type of Events</a>
+                            <!-- <a class="dropdown-item" href="junior-suite.php">Rooms</a> -->
                             <!-- <a class="dropdown-item" href="master-suite.php">Master Suite</a>
                             <a class="dropdown-item" href="superior-suite.php">Superior Suite</a> -->
                         </div>
@@ -80,7 +80,7 @@
                                     <path d="M3.2.375H0v-.75H3.2Z" transform="translate(206.199 686.857)" fill="#fff"/>
                                 </g>
                             </svg>
-                            Book Now</a>
+                            Information</a>
                     </li>
                     <li class="nav-item">
                         <div class="vacio"></div>

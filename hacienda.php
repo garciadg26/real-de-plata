@@ -1,5 +1,5 @@
 <?php $title = "Hacienda - Mesón Real De Plata"; ?>
-<?php $description = "Vive una experiencia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Patrimonio de la humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
 <?php include_once "Public/include/head.php"; ?>
 
@@ -46,7 +46,7 @@
                 <p class="txt_general">El Mesón Real De Plata, declarado como patrimonio de la humanidad por la UNESCO. Es el escenario ideal para eventos, bodas y disfrutar de un tiempo de reconexión con la naturaleza, con los amigos, con la familia y con uno mismo.</p>
                 <p class="txt_general">Construido durante el siglo XVI por los colonizadores españoles para ser un bastión militar, adaptándose con el paso de los años para ser el hospedaje de viajeros que recorrían el Camino Real de Tierra Adentro, convirtiéndose así en un refugio y lugar de encuentro para mercaderes y viajeros.</p>
                 <p class="txt_general">La hospitalidad es parte de nuestra historia.</p>
-                <p class="txt_general">Nuestras habitaciones se caracterizan por ser el perfecto equilibrio entre confort y hospitalidad para asegurar que cada uno de nuestros invitados disfrute una experiencia única y placentera.</p>
+                <p class="txt_general">Nuestra prestigiosa hacienda se caracteriza por ser el perfecto equilibrio entre confort y hospitalidad para asegurar que cada uno de nuestros invitados disfrute una experiencia única y placentera.</p>
                 <p class="txt_general">Contamos con el ambiente ideal para cada momento de tu vida. Ya sea para tus reuniones familiares, empresariales o retiros.</p>
                 <p class="txt_general">Cada espacio está minuciosamente diseñado para recorrer el camino de la inspiración, la creatividad, el optimismo, la vitalidad y la libertad.</p>
                 <p class="txt_general">Platícanos de la historia que quieres crear y cómo la quieres vivir, nosotros nos encargamos de hacerla realidad. Te aseguramos que será inolvidable.</p>

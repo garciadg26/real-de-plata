@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll('#banner_reserva input');
 
 const expresiones = {
     //comentario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-    // nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    motivoVisita: /^[a-zA-ZÀ-ÿ\s]{1,20}$/, // Letras y espacios, pueden llevar acentos.
     //password: /^.{4,12}$/, // 4 a 12 digitos.
     // correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     telefono: /^\d{10,12}$/, // 7 a 14 numeros.
@@ -11,6 +11,7 @@ const expresiones = {
 }
 
 const campos = {
+    motivoVisita: false,
     telefono: false,
     numPersonas: false
 }
@@ -22,6 +23,9 @@ const validarFormulario = (e) =>{
             break;
         case "numPersonas":
             validarCampo(expresiones.numPersonas, e.target, 'numPersonas')
+        break;
+        case "motivoVisita":
+            validarCampo(expresiones.motivoVisita, e.target, 'motivoVisita')
         break;
     }
 } 
@@ -67,7 +71,7 @@ formulario.addEventListener('submit', e=>{
         let selectMotivo = document.getElementById('selectMotivo');
         console.log("Ingrese a la validacion")
 
-        if(campos.telefono && campos.numPersonas && selectMotivo.value != ''){
+        if(campos.telefono && campos.numPersonas && campos.motivoVisita){
 
             document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
             setTimeout(() => {
@@ -114,7 +118,7 @@ formulario.addEventListener('submit', e=>{
 
         
         } else {
-            console.log("Motivo: " + selectMotivo);
+            console.log("Motivo: " + campos.motivoVisita);
             console.log("Telefono: " + campos.telefono);
             console.log("personas: " * campos.numPersonas);
             document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');

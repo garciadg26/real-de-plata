@@ -1,5 +1,5 @@
 <?php $title = "Hacienda - Mesón Real De Plata"; ?>
-<?php $description = "Live a completely pleasant experience, outside the city and in an incomparable historical and country environment. Gran Hacienda & Boutique Hotel. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
+<?php $description = "Live a completely pleasant stay, outside the city and in an incomparable historical and country environment. Heritage of humanity dating from the s. XVI, Located in the Old Route of the Silver."; ?>
 
 <?php include_once "include/head.php"; ?>
 
@@ -46,7 +46,7 @@
                 <p class="txt_general">The Mesón Real De Plata, was declared a World Heritage Site by the UNESCO. It is the ideal setting for events, weddings and enjoy a moment of connection with nature, friends, family and with yourself.</p>
                 <p class="txt_general">Built during the 16th century by the Spanish colonizers as a military stronghold, adapting over the years to host travelers who passed through the Camino Real de Tierra Adentro, thus becoming a refuge and meeting place for merchants and travelers.</p>
                 <p class="txt_general">Hospitality is part of our history.</p>
-                <p class="txt_general">Our rooms are specially design to offer the perfect balance between comfort and hospitality, ensuring that each of our guests enjoys a unique and pleasant experience.</p>
+                <p class="txt_general">Our prestigious Hacienda are specially design to offer the perfect balance between comfort and hospitality, ensuring that each of our guests enjoys a unique and pleasant experience.</p>
                 <p class="txt_general">We have the ideal environment for every aspect of your life, whether it is for your family, business or retreat meetings.</p>
                 <p class="txt_general">Each space is meticulously designed to explore the paths of inspiration, creativity, optimism, vitality and freedom.</p>
                 <p class="txt_general">Tell us about the story you want to create and how you want to live it, and we will  transform it into reality. We assure you that it will be unforgettable.</p>

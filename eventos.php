@@ -1,5 +1,5 @@
 <?php $title = "Eventos - Mesón Real De Plata"; ?>
-<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Grand Hacienda & Hotel Boutique. Patrimonio d ela humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
+<?php $description = "Vive una estancia completamente placentera, fuera de la ciudad y en un inigualable entorno histórico y campirano. Patrimonio de la humanidad que data del s. XVI, Ubicada en La Antigua Ruta De La Plata."; ?>
 
     <?php include_once "Public/include/head.php" ?>
 
@@ -53,15 +53,15 @@
                         </a>
                     </div>
                     <div class="col-md-5">
-                        <a class="item_gale_eventos gallery-group" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-eventos2.jpg">
-                            <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-eventos2.jpg" alt="">
+                        <a class="item_gale_eventos gallery-group" rel="example_group" href="./Public/images/Meson-real-de-plata-eventos-inolvidables.jpg">
+                            <img class="img-fluid" src="Public/images/Meson-real-de-plata-eventos-inolvidables.jpg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="row segunda_fila_img_eventos">
                     <div class="col-md-5">
-                        <a class="item_gale_eventos gallery-group img_top20" rel="example_group" href="./Public/images/hotel-meson-real-de-plata-eventos3.jpg">
-                            <img class="img-fluid" src="Public/images/hotel-meson-real-de-plata-eventos3.jpg" alt="">
+                        <a class="item_gale_eventos gallery-group img_top20" rel="example_group" href="./Public/images/Meson-real-de-plata-eventos-unicos.jpg">
+                            <img class="img-fluid" src="Public/images/Meson-real-de-plata-eventos-unicos.jpg" alt="">
                         </a>
                     </div>
                     <div class="col-md-7">
